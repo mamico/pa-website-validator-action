@@ -30,9 +30,9 @@ RUN apt-get update -qqy \
 # RUN npm install -g pa-website-validator
 
 # Download master or tag from github
-#     npm install && \
 RUN git clone https://github.com/italia/pa-website-validator && \
      cd pa-website-validator && \
+     npm install && \
      npm install -g .
 
 # RUN npm install -g https://github.com/italia/pa-website-validator.git
