@@ -1,0 +1,17 @@
+name: Test Audit
+on: [push, pull_request]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Run audit on https://github.com/
+      uses: ./
+      with:
+        url: 'https://www.comune.modena.it'
+        type: 'municipality'
+    - uses: actions/upload-artifact@master
+      with:
+        name: report
+        path: './report'
