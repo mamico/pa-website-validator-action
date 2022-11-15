@@ -1,5 +1,4 @@
 # Base image built from Dockerfile.base (Chrome Stable + Node LTS)
-# FROM yukinying/chrome-headless-browser:latest
 FROM node:lts-buster-slim
 
 LABEL "com.github.actions.name"="PA Website Validator Audit"
@@ -30,7 +29,7 @@ RUN apt-get update -qqy \
 # RUN npm install -g pa-website-validator
 
 # Download master or tag from github
-RUN git clone https://github.com/italia/pa-website-validator && \
+RUN git clone --branch develop https://github.com/italia/pa-website-validator && \
      cd pa-website-validator && \
      npm install && \
      npm install -g .

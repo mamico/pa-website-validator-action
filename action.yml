@@ -1,0 +1,12 @@
+name: 'PA Website Validator Auditi (Unoffical Github action)'
+description: 'Run tests on a webpage via Italia PA Website Validator (Unofficial Github action)'
+inputs:
+  url:
+    description: 'Url to test'
+    required: true
+  type:
+    description: 'municipality|school'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
