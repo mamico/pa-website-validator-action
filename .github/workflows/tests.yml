@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Run audit
+    - name: Run audit 1
       uses: ./
       with:
         url: 'https://www.comune.modena.it'
