@@ -1,5 +1,8 @@
-name: Test Audit
-on: [push, pull_request]
+name: Test IO-COmune V3
+on: 
+  - push
+  - pull_request
+  - workflow_dispatch
 
 jobs:
   audit-v3:
