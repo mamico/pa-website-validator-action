@@ -16,15 +16,6 @@ jobs:
       with:
         name: report
         path: './report'
-    - name: Publish HTML report
-      if: always() # We want this to always run, even if test fail prior to this step running
-      uses: peaceiris/actions-gh-pages@v3.7.3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: report/
-        keep_files: true
-        user_name: 'github-actions[bot]' # This will be the username that gets stamped in the repo commit
-        user_email: 'github-actions[bot]@users.noreply.github.com' # This will be the user email that gets stamped in the repo commit
   audit-comunemo:
     runs-on: ubuntu-latest
     steps:
@@ -39,15 +30,6 @@ jobs:
       with:
         name: report
         path: './report'
-    - name: Publish HTML report
-      if: always() # We want this to always run, even if test fail prior to this step running
-      uses: peaceiris/actions-gh-pages@v3.7.3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: report/
-        keep_files: true
-        user_name: 'github-actions[bot]' # This will be the username that gets stamped in the repo commit
-        user_email: 'github-actions[bot]@users.noreply.github.com' # This will be the user email that gets stamped in the repo commit
   audit-novellara-staging:
     runs-on: ubuntu-latest
     steps:
@@ -55,16 +37,20 @@ jobs:
     - name: Run audit 1
       uses: ./
       with:
-        url: 'https://staging-novellara.aida.redturtle.it/'
+        url: 'https://staging-novellara.aida.redturtle.it'
         type: 'municipality'
     - name: Upload artifact
       uses: actions/upload-artifact@master
       with:
         name: report
         path: './report'
+  publish:
+    runs-on: ubuntu-latest
+    if: always() # We want this to always run, even if test fail prior to this step running
+    needs: ["audit-novellara-staging", "audit-comunemo", "audit-v3"]  
+    steps:
     - name: Publish HTML report
-      if: always() # We want this to always run, even if test fail prior to this step running
-      uses: peaceiris/actions-gh-pages@v3.7.3
+      uses: peaceiris/actions-gh-pages@v3.9.3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: report/
