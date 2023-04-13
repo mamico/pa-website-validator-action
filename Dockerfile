@@ -30,7 +30,8 @@ RUN apt-get update -qqy \
 
 # Download master or tag from github
 # RUN git clone --branch develop https://github.com/mamico/pa-website-validator && \
-RUN git clone --branch v2.2.0 https://github.com/italia/pa-website-validator && \
+# RUN git clone --branch v2.2.0 https://github.com/italia/pa-website-validator && \
+RUN git clone --branch main https://github.com/italia/pa-website-validator && \
      cd pa-website-validator && \
      npm install && \
      npm install -g .
