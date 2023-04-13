@@ -16,7 +16,7 @@ mkdir -p "$OUTPUT_FOLDER"
 
 # Clarify in logs which URL we're auditing.
 printf "* Beginning audit of %s ...\n\n" "$REPORT_URL"
-pa-website-validator --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope online
+pa-website-validator --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE"
 
 # Parse individual scores from JSON output.
 # Unorthodox jq syntax because of dashes -- https://github.com/stedolan/jq/issues/38

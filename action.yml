@@ -7,6 +7,9 @@ inputs:
   type:
     description: 'municipality|school'
     required: true
+  scope:
+    description: 'local|online'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
