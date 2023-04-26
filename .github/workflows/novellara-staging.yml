@@ -12,7 +12,7 @@ jobs:
     - name: Run audit 1
       uses: ./
       with:
-        url: 'https://staging-novellara.aida.redturtle.it'
+        url: 'https://novellara.blutopia.redturtle.it'
         type: 'municipality'
         scope: 'local'
     - name: Upload artifact
