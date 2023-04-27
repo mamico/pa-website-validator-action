@@ -1,4 +1,4 @@
-name: Test Novellara Staging
+name: Test Novellara
 on: 
   - push
   - pull_request
@@ -12,9 +12,9 @@ jobs:
     - name: Run audit 1
       uses: ./
       with:
-        url: 'https://novellara.blutopia.redturtle.it'
+        url: 'https://www.comune.novellara.re.it'
         type: 'municipality'
-        scope: 'local'
+        scope: 'online'
     - name: Upload artifact
       uses: actions/upload-artifact@master
       with:
