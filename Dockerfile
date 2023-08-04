@@ -37,7 +37,7 @@ RUN apt-get update && apt-get install gnupg wget -y && \
 RUN git clone --branch v2.6.0 https://github.com/italia/pa-website-validator && \
      cd pa-website-validator && \
      npm ci && \
-     npm -i g
+     npm -g i .
 
 # RUN npm install -g https://github.com/italia/pa-website-validator.git
 # Download latest or released pa-website-validator from https://github.com/italia/pa-website-validator/releases
