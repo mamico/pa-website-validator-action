@@ -1,4 +1,4 @@
-name: Test IO-COmune V3
+name: Test IO-Comune V3
 on: 
   - push
   - pull_request

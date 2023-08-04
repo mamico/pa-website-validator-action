@@ -1,5 +1,5 @@
 # Base image built from Dockerfile.base (Chrome Stable + Node LTS)
-FROM node:lts-buster-slim
+FROM node:18
 
 LABEL "com.github.actions.name"="PA Website Validator Audit"
 LABEL "com.github.actions.description"="Run tests on a webpage via Italia PA Website Validator"
@@ -15,15 +15,18 @@ LABEL maintainer="Mauro Amico <mauro.amico@gmail.com>"
 ARG CACHEBUST=1
 
 ARG DEBIAN_FRONTEND=noninteractive
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
 
 # TODO: instead of chromium package, install only pupeeter's prerequisities?
-RUN apt-get update -qqy \
-  && apt-get -qqy install \
-       chromium \
-       dumb-init gnupg wget ca-certificates apt-transport-https \
-       ttf-wqy-zenhei \
-       git jq bc \
-  && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
+# Install Google Chrome Stable and fonts
+# Note: this installs the necessary libs to make the browser work with Puppeteer.
+RUN apt-get update && apt-get install gnupg wget -y && \
+  wget --quiet --output-document=- https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor > /etc/apt/trusted.gpg.d/google-archive.gpg && \
+  sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' && \
+  apt-get update && \
+  apt-get install google-chrome-stable -y --no-install-recommends && \
+  rm -rf /var/lib/apt/lists/*
 
 # Download latest pa-website-validator build from npm
 # RUN npm install -g pa-website-validator
@@ -31,13 +34,11 @@ RUN apt-get update -qqy \
 # Download master or tag from github
 # RUN git clone --branch develop https://github.com/mamico/pa-website-validator && \
 # RUN git clone --branch main https://github.com/italia/pa-website-validator && \
-RUN git clone --branch v2.5.1 https://github.com/italia/pa-website-validator && \
+RUN git clone --branch v2.6.0 https://github.com/italia/pa-website-validator && \
      cd pa-website-validator && \
-     npm install && \
-     npm install -g .
+     npm ci
 
 # RUN npm install -g https://github.com/italia/pa-website-validator.git
-
 # Download latest or released pa-website-validator from https://github.com/italia/pa-website-validator/releases
 # https://github.com/italia/pa-website-validator/releases/download/v1.0.10/comuni-1.0.10-Linux-x64.zip
 # https://github.com/italia/pa-website-validator/releases/download/v1.0.10/scuole-1.0.10-Linux-x64.zip
