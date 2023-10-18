@@ -1,18 +1,18 @@
-name: Test Bibbiano
+name: Test Comune Camposanto
 on: 
   - push
   - pull_request
   - workflow_dispatch
 
 jobs:
-  audit-comune-bibbiano:
+  audit-comune-camposanto:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - name: Run audit 1
       uses: ./
       with:
-        url: 'https://www.comune.bibbiano.re.it/'
+        url: 'https://www.comune.camposanto.mo.it/'
         type: 'municipality'
         scope: 'online'
     - name: Upload artifact
