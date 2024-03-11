@@ -1,18 +1,33 @@
-name: Test La Spezia
+name: PA WebSite Audit
 on: 
   - push
   - pull_request
   - workflow_dispatch
 
 jobs:
-  audit-comune-laspezia:
+  audit-comune-bibbiano:
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        url:
+          - 'https://v3.io-comune.redturtle.it'
+          - 'https://www.comune.bibbiano.re.it/'
+          - 'https://www.comune.camposanto.mo.it/'
+          - 'https://www.comune.cavriago.re.it'
+          - 'https://www.comune.modena.it'
+          - 'https://www.comune.laspezia.it'
+          - 'https://www.comune.mirandola.mo.it/'
+          - 'https://www.comune.novellara.re.it'
+          - 'https://www.comune.rolo.re.it'
+          - 'https://www.comune.sanpossidonio.mo.it'
+          - 'https://www.comune.sanpolodenza.re.it/'
     steps:
     - uses: actions/checkout@master
     - name: Run audit 1
       uses: ./
       with:
-        url: 'https://www.comune.laspezia.it'
+        url: ${{ matrix.url }}
         type: 'municipality'
         scope: 'online'
     - name: Upload artifact
