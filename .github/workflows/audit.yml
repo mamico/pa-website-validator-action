@@ -5,10 +5,10 @@ on:
   - workflow_dispatch
 
 jobs:
-  audit-comune-bibbiano:
+  audit-comune:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 1
+      max-parallel: 4
       matrix:
         url:
           - 'https://v3.io-comune.redturtle.it'
@@ -35,6 +35,10 @@ jobs:
       with:
         name: report
         path: './report'
+  publish-html:
+    runs-on: ubuntu-latest
+    needs: audit-comune
+    steps:
     - name: Publish HTML report
       if: always() # We want this to always run, even if test fail prior to this step running
       uses: peaceiris/actions-gh-pages@v3.9.3
