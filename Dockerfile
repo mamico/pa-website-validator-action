@@ -17,6 +17,7 @@ ARG CACHEBUST=1
 ARG DEBIAN_FRONTEND=noninteractive
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome-stable
+ENV NODE_OPTIONS="--max_old_space_size=4096"
 
 # TODO: instead of chromium package, install only pupeeter's prerequisities?
 # Install Google Chrome Stable and fonts
