@@ -5,13 +5,11 @@
         const response = await fetch('https://api.github.com/repos/mamico/pa-website-validator-action/contents/?ref=gh-pages');
         const data = await response.json();
         let htmlString = '<ul>';
-        
-        for (let file of data) {
-	  if (file.path.match(/^\d{4}-\d{2}-\d{2}/)) {
+        for (let file of data.sort((a, b) => - b.path.localeCompare(a.path))) {
+      	  if (file.path.match(/^\d{4}-\d{2}-\d{2}/)) {
               htmlString += `<li><a href="${file.path}/report.html">${file.path}</a></li>`;
           }
         }
-
         htmlString += '</ul>';
         document.getElementsByTagName('body')[0].innerHTML = htmlString;
       })()
