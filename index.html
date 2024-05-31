@@ -109,7 +109,7 @@
 
                       // Apply listener for user change in value
                       select.addEventListener("change", function () {
-                        column.search(select.value, { exact: true }).draw();
+                        column.search(select.value, { exact: true }).draw().sort([[0, 'desc']]);  
                       });
 
                       // Add list of options
