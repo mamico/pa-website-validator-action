@@ -40,7 +40,7 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: audit-${{ matrix.hostname }}
-        path: ./report/${{ matrix.hostname }}
+        path: ./report
 
   # merge:
   #   runs-on: ubuntu-latest
