@@ -35,7 +35,7 @@ RUN apt-get update && apt-get install gnupg wget -y && \
 # Download master or tag from github
 # RUN git clone --branch develop https://github.com/mamico/pa-website-validator && \
 # RUN git clone --branch main https://github.com/italia/pa-website-validator && \
-RUN git clone --branch v2.8.3 https://github.com/italia/pa-website-validator && \
+RUN git clone --branch v2.9.0 https://github.com/italia/pa-website-validator && \
      cd pa-website-validator && \
      npm ci && \
      npm -g i .
