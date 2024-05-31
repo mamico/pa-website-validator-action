@@ -38,7 +38,7 @@
           // Promise(
           const p = files
             .filter((file) => file.path.match(/^\d{4}-\d{2}-\d{2}/))
-            .sort((a, b) => b.path.localeCompare(a.path))
+            // .sort((a, b) => b.path.localeCompare(a.path))
             .map((file) => {
               return fetch(
                 `./${file.path}/report.json`,
@@ -94,6 +94,7 @@
             new DataTable("#audits", {
               columns: columns,
               scrollX: true,
+              order: [[0, 'desc']],
               data: data,
               initComplete: function () {
                 this.api()
