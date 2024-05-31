@@ -12,16 +12,21 @@ jobs:
       matrix:
         url:
           - 'https://v3.io-comune.redturtle.it'
-          - 'https://www.comune.bibbiano.re.it/'
-          - 'https://www.comune.camposanto.mo.it/'
+          - 'https://www.comune.bibbiano.re.it'
+          - 'https://www.comune.camposanto.mo.it'
           - 'https://www.comune.cavriago.re.it'
           - 'https://www.comune.modena.it'
           - 'https://www.comune.laspezia.it'
-          - 'https://www.comune.mirandola.mo.it/'
+          - 'https://www.comune.mirandola.mo.it'
           - 'https://www.comune.novellara.re.it'
           - 'https://www.comune.rolo.re.it'
           - 'https://www.comune.sanpossidonio.mo.it'
-          - 'https://www.comune.sanpolodenza.re.it/'
+          - 'https://www.comune.sanpolodenza.re.it'
+          - 'https://www.comune.campegine.re.it'
+          - 'https://www.comune.canossa.re.it'
+          - 'https://www.comune.santilariodenza.re.it'
+          - 'https://www.comune.gattatico.re.it'
+          - 'https://www.comune.montecchio-emilia.re.it'
     steps:
     - uses: actions/checkout@master
     - name: Run audit 1
