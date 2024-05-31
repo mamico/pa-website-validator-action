@@ -42,7 +42,7 @@ jobs:
         name: audit-${{ matrix.hostname }}
         path: ./report
 
-  publish-html:
+  download-artifact:
     runs-on: ubuntu-latest
     needs: [ audit ]
     steps:
@@ -53,6 +53,11 @@ jobs:
           path: ./report
           pattern: audit-*
           merge-multiple: true
+
+  publish-html:
+    runs-on: ubuntu-latest
+    needs: [ download-artifact ]
+    steps:      
       - name: Publish HTML report
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -61,3 +66,4 @@ jobs:
           keep_files: true
           user_name: 'github-actions[bot]' # This will be the username that gets stamped in the repo commit
           user_email: 'github-actions[bot]@users.noreply.github.com' # This will be the user email that gets stamped in the repo commit
+s
