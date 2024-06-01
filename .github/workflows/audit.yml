@@ -1,55 +1,67 @@
 name: PA WebSite Audit
 on: 
   - push
-  - pull_request
+  # - pull_request
   - workflow_dispatch
 
 jobs:
-  audit-comune:
+  audit:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
+      fail-fast: false
       matrix:
-        url:
-          - 'https://v3.io-comune.redturtle.it'
-          - 'https://www.comune.bibbiano.re.it'
-          - 'https://www.comune.camposanto.mo.it'
-          - 'https://www.comune.cavriago.re.it'
-          - 'https://www.comune.modena.it'
-          - 'https://www.comune.laspezia.it'
-          - 'https://www.comune.mirandola.mo.it'
-          - 'https://www.comune.novellara.re.it'
-          - 'https://www.comune.rolo.re.it'
-          - 'https://www.comune.sanpossidonio.mo.it'
-          - 'https://www.comune.sanpolodenza.re.it'
-          - 'https://www.comune.campegine.re.it'
-          - 'https://www.comune.canossa.re.it'
-          - 'https://www.comune.santilariodenza.re.it'
-          - 'https://www.comune.gattatico.re.it'
-          - 'https://www.comune.montecchio-emilia.re.it'
+        hostname:
+          - 'v3.io-comune.redturtle.it'
+          - 'www.comune.bibbiano.re.it'
+          - 'www.comune.camposanto.mo.it'
+          - 'www.comune.cavriago.re.it'
+          - 'www.comune.modena.it'
+          - 'www.comune.laspezia.it'
+          - 'www.comune.mirandola.mo.it'
+          - 'www.comune.novellara.re.it'
+          - 'www.comune.rolo.re.it'
+          - 'www.comune.sanpossidonio.mo.it'
+          - 'www.comune.sanpolodenza.re.it'
+          - 'www.comune.campegine.re.it'
+          - 'www.comune.canossa.re.it'
+          - 'www.comune.santilariodenza.re.it'
+          - 'www.comune.gattatico.re.it'
+          - 'www.comune.montecchio-emilia.re.it'
     steps:
-    - uses: actions/checkout@master
-    - name: Run audit 1
+    - uses: actions/checkout@v4
+    - name: Run audit
       uses: ./
       with:
-        url: ${{ matrix.url }}
+        url: https://${{ matrix.hostname }}
         type: 'municipality'
         scope: 'online'
     - name: Upload artifact
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v4
       with:
-        name: report-${{ matrix.url }}
-        path: './report/${{ matrix.url }}'
-  publish-html:
+        name: audit-${{ matrix.hostname }}
+        path: ./report
+
+  download-artifact:
     runs-on: ubuntu-latest
-    needs: audit-comune
+    needs: [ audit ]
     steps:
-    - name: Publish HTML report
-      if: always() # We want this to always run, even if test fail prior to this step running
-      uses: peaceiris/actions-gh-pages@v3.9.3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: report/
-        keep_files: true
-        user_name: 'github-actions[bot]' # This will be the username that gets stamped in the repo commit
-        user_email: 'github-actions[bot]@users.noreply.github.com' # This will be the user email that gets stamped in the repo commit
+      - name: Download artifact
+        if: always() # We want this to always run, even if test fail prior to this step running
+        uses: actions/download-artifact@v4
+        with:
+          path: ./audits
+          pattern: audit-*
+          merge-multiple: true
+      - name: List files (debug)
+        run: |
+          pwd
+          ls -l ./audits
+      - name: Publish HTML/JSON audit reports
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./audits
+          keep_files: true
+          user_name: 'github-actions[bot]' # This will be the username that gets stamped in the repo commit
+          user_email: 'github-actions[bot]@users.noreply.github.com' # This will be the user email that gets stamped in the repo commit
