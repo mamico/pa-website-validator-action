@@ -74,7 +74,7 @@
                 });
             });
           Promise.all(p).then((data) => {
-            console.log(data);
+            // console.log(data);
             const columns = Object.keys(data[0])
               .map((key) => ({ 
                 name: key, 
@@ -89,6 +89,7 @@
                   }
                   return data;
                 }, 
+                orderable: !["site"].includes(key),
               }));
 
             new DataTable("#audits", {
@@ -106,12 +107,11 @@
                       let select = document.createElement("select");
                       select.add(new Option(""));
                       column.header().append(select);
-
                       // Apply listener for user change in value
                       select.addEventListener("change", function () {
-                        column.search(select.value, { exact: true }).draw().sort([[0, 'desc']]);  
+                        column.search(select.value, { exact: true }).draw();
+                        //.sort([[0, 'desc']]);  
                       });
-
                       // Add list of options
                       column
                         .data()
