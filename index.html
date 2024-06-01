@@ -38,10 +38,15 @@
       </table>
     </article>
     <script>
+      $.fn.dataTable.ext.type.order["dt-string-asc"] = function (a, b) {
+        return a.date.localeCompare(b.date);
+      };
+      $.fn.dataTable.ext.type.order["dt-string-desc"] = function (a, b) {
+        return -a.date.localeCompare(b.date);
+      };
       fetch("./audit.json")
         .then((res) => res.json())
         .then((data) => {
-          // console.log(data);
           const columns = Object.keys(data[0]).map((key) => ({
             name: key,
             data: key,
@@ -73,27 +78,24 @@
 
           new DataTable("#audits", {
             columns: columns,
+            columnDefs: [{ type: "dt-string", targets: 0 }],
             scrollX: true,
             order: [[0, "desc"]],
             data: data,
             responsive: true,
-            lengthMenu: [25, 50, 100, { label: 'All', value: -1 }],
+            lengthMenu: [25, 50, 100, { label: "All", value: -1 }],
             initComplete: function () {
               this.api()
                 .columns()
                 .every(function () {
                   let column = this;
                   if (["site"].includes(column.header().textContent)) {
-                    // Create select element
                     let select = document.createElement("select");
                     select.add(new Option(""));
                     column.header().append(select);
-                    // Apply listener for user change in value
                     select.addEventListener("change", function () {
                       column.search(select.value, { exact: true }).draw();
-                      //.sort([[0, 'desc']]);
                     });
-                    // Add list of options
                     column
                       .data()
                       .unique()
