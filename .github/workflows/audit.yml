@@ -12,22 +12,22 @@ jobs:
       fail-fast: false
       matrix:
         hostname:
-          # - 'v3.io-comune.redturtle.it'
-          # - 'www.comune.bibbiano.re.it'
+          - 'v3.io-comune.redturtle.it'
+          - 'www.comune.bibbiano.re.it'
           - 'www.comune.camposanto.mo.it'
-          # - 'www.comune.cavriago.re.it'
-          # - 'www.comune.modena.it'
-          # - 'www.comune.laspezia.it'
-          # - 'www.comune.mirandola.mo.it'
-          # - 'www.comune.novellara.re.it'
-          # - 'www.comune.rolo.re.it'
-          # - 'www.comune.sanpossidonio.mo.it'
-          # - 'www.comune.sanpolodenza.re.it'
-          # - 'www.comune.campegine.re.it'
-          # - 'www.comune.canossa.re.it'
-          # - 'www.comune.santilariodenza.re.it'
-          # - 'www.comune.gattatico.re.it'
-          # - 'www.comune.montecchio-emilia.re.it'
+          - 'www.comune.cavriago.re.it'
+          - 'www.comune.modena.it'
+          - 'www.comune.laspezia.it'
+          - 'www.comune.mirandola.mo.it'
+          - 'www.comune.novellara.re.it'
+          - 'www.comune.rolo.re.it'
+          - 'www.comune.sanpossidonio.mo.it'
+          - 'www.comune.sanpolodenza.re.it'
+          - 'www.comune.campegine.re.it'
+          - 'www.comune.canossa.re.it'
+          - 'www.comune.santilariodenza.re.it'
+          - 'www.comune.gattatico.re.it'
+          - 'www.comune.montecchio-emilia.re.it'
     steps:
     - uses: actions/checkout@v4
     - name: Run audit
