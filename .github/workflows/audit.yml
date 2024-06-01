@@ -53,10 +53,6 @@ jobs:
           path: ./audits
           pattern: audit-*
           merge-multiple: true
-      - name: List files (debug)
-        run: |
-          pwd
-          ls -l ./audits
       - name: Publish HTML/JSON audit reports
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -75,7 +71,7 @@ jobs:
         with:
           ref: gh-pages
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - name: Run process audit
