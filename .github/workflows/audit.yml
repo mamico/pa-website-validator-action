@@ -50,23 +50,18 @@ jobs:
         if: always() # We want this to always run, even if test fail prior to this step running
         uses: actions/download-artifact@v4
         with:
-          path: ./report
+          path: ./audits
           pattern: audit-*
           merge-multiple: true
-      - name: List files
-        run: ls -l ./report
-
-  publish-html:
-    runs-on: ubuntu-latest
-    needs: [ download-artifact ]
-    steps:      
-      - name: List files
-        run: ls -l ./report
-      - name: Publish HTML report
+      - name: List files (debug)
+        run: |
+          pwd
+          ls -l ./audits
+      - name: Publish HTML/JSON audit reports
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./report
+          publish_dir: ./audits
           keep_files: true
           user_name: 'github-actions[bot]' # This will be the username that gets stamped in the repo commit
           user_email: 'github-actions[bot]@users.noreply.github.com' # This will be the user email that gets stamped in the repo commit
