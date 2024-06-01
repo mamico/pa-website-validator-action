@@ -1,7 +1,7 @@
 name: PA WebSite Audit
 on: 
   - push
-  - pull_request
+  # - pull_request
   - workflow_dispatch
 
 jobs:
@@ -12,8 +12,8 @@ jobs:
       fail-fast: false
       matrix:
         hostname:
-          - 'v3.io-comune.redturtle.it'
-          - 'www.comune.bibbiano.re.it'
+          # - 'v3.io-comune.redturtle.it'
+          # - 'www.comune.bibbiano.re.it'
           - 'www.comune.camposanto.mo.it'
           # - 'www.comune.cavriago.re.it'
           # - 'www.comune.modena.it'
@@ -53,11 +53,15 @@ jobs:
           path: ./report
           pattern: audit-*
           merge-multiple: true
+      - name: List files
+        run: ls -l ./report
 
   publish-html:
     runs-on: ubuntu-latest
     needs: [ download-artifact ]
     steps:      
+      - name: List files
+        run: ls -l ./report
       - name: Publish HTML report
         uses: peaceiris/actions-gh-pages@v4
         with:
