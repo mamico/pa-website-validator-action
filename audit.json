@@ -34,6 +34,17 @@
   },
   {
     "report": {
+      "date": "2024-06-01T21:12:43.634Z",
+      "url": "./2024-06-01_21-12-42_https___www_comune_camposanto_mo_it/report.html"
+    },
+    "site": "https://www.comune.camposanto.mo.it/",
+    "performance": 14,
+    "modelComplianceInformation": 94,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 67
+  },
+  {
+    "report": {
       "date": "2023-04-26T22:49:06.399Z",
       "url": "./2023-04-26_22-49-05_https___novellara_blutopia_redturtle_it/report.html"
     },
