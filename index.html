@@ -211,7 +211,17 @@
               render: function (data, type) {
                 if (type === "display") {
                   if (key === "report") {
-                    return `<a href="${data.url}">${data.date}</a>`;
+                    return `<a href="${data.url}">${new Date(
+                      data.date,
+                    ).toLocaleString((locales = "it"), {
+                      year: "numeric",
+                      month: "short",
+                      day: "2-digit",
+                      weekday: "long",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      timeZoneName: "short",
+                    })}</a>`;
                   }
                   return data;
                 }
