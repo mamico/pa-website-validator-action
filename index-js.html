@@ -155,74 +155,116 @@
       function hideSpinner() {
         loadingDiv.style.visibility = "hidden";
       }
-      showSpinner();
-      fetch("./audit.json")
+      // showSpinner();
+      const p2 = fetch(
+        "https://api.github.com/repos/mamico/pa-website-validator-action/contents/?ref=gh-pages",
+      )
         .then((res) => res.json())
-        .then((data) => {
-          // console.log(data);
-          const columns = Object.keys(data[0]).map((key) => ({
-            name: key,
-            data: key,
-            title: key,
-            render: function (data, type) {
-              if (type === "display") {
-                if (key === "report") {
-                  return `<a href="${data.url}">${new Date(
-                    data.date,
-                  ).toLocaleString((locales = "it"), {
-                    year: "numeric",
-                    month: "short",
-                    day: "2-digit",
-                    weekday: "long",
-                    hour: "2-digit",
-                    minute: "2-digit",
-                    timeZoneName: "short",
-                  })}</a>`;
-                }
-                if (key === "site") {
-                  return `<a href="${data}" target="_blank">${data}</a>`;
+        .then((files) => {
+          // Promise(
+          const p = files
+            .filter((file) => file.path.match(/^\d{4}-\d{2}-\d{2}/))
+            // .sort((a, b) => b.path.localeCompare(a.path))
+            .map((file) => {
+              return fetch(
+                // `https://mamico.github.io/pa-website-validator-action/${
+                //   file.path
+                // }/report.json`,
+                `./${file.path}/report.json`,
+              )
+                .then((res) => {
+                  // debugger;
+                  return res.json();
+                })
+                .then((audit) => {
+                  return {
+                    report: {
+                      date: audit.fetchTime,
+                      url: `./${file.path}/report.html`,
+                    },
+                    site: audit.finalUrl,
+                    performance: Math.floor(
+                      audit.categories.performance?.score * 100.0,
+                    ),
+                    modelComplianceInformation: Math.floor(
+                      audit.categories.modelComplianceInformation?.score *
+                        100.0,
+                    ),
+                    reccomandationsAndAdditionalTests: Math.floor(
+                      audit.categories.reccomandationsAndAdditionalTests
+                        ?.score * 100.0,
+                    ),
+                    additionalTests: Math.floor(
+                      audit.categories.additionalTests?.score * 100.0,
+                    ),
+                    // pwa: audit.categories.pwa.score,
+                    // keys: Object.keys(audit.categories)
+                  };
+                });
+            });
+          Promise.all(p).then((data) => {
+            // console.log(data);
+            const columns = Object.keys(data[0]).map((key) => ({
+              name: key,
+              data: key,
+              title: key,
+              render: function (data, type) {
+                if (type === "display") {
+                  if (key === "report") {
+                    return `<a href="${data.url}">${new Date(
+                      data.date,
+                    ).toLocaleString((locales = "it"), {
+                      year: "numeric",
+                      month: "short",
+                      day: "2-digit",
+                      weekday: "long",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      timeZoneName: "short",
+                    })}</a>`;
+                  }
+                  return data;
                 }
                 return data;
-              }
-              return data;
-            },
-            orderable: !["site"].includes(key),
-          }));
+              },
+              orderable: !["site"].includes(key),
+            }));
 
-          new DataTable("#audits", {
-            columns: columns,
-            scrollX: true,
-            order: [[0, "desc"]],
-            data: data,
-            responsive: true,
-            initComplete: function () {
-              this.api()
-                .columns()
-                .every(function () {
-                  let column = this;
-                  if (["site"].includes(column.header().textContent)) {
-                    // Create select element
-                    let select = document.createElement("select");
-                    select.add(new Option(""));
-                    column.header().append(select);
-                    // Apply listener for user change in value
-                    select.addEventListener("change", function () {
-                      column.search(select.value, { exact: true }).draw();
-                      //.sort([[0, 'desc']]);
-                    });
-                    // Add list of options
-                    column
-                      .data()
-                      .unique()
-                      .sort()
-                      .each(function (d, j) {
-                        select.add(new Option(d));
+            new DataTable("#audits", {
+              columns: columns,
+              scrollX: true,
+              order: [[0, "desc"]],
+              data: data,
+              responsive: true,
+              initComplete: function () {
+                this.api()
+                  .columns()
+                  .every(function () {
+                    let column = this;
+                    if (["site"].includes(column.header().textContent)) {
+                      // Create select element
+                      let select = document.createElement("select");
+                      select.add(new Option(""));
+                      column.header().append(select);
+                      // Apply listener for user change in value
+                      select.addEventListener("change", function () {
+                        column.search(select.value, { exact: true }).draw();
+                        //.sort([[0, 'desc']]);
                       });
-                  }
-                });
-              this.api().draw();
-              hideSpinner();
-            },
+                      // Add list of options
+                      column
+                        .data()
+                        .unique()
+                        .sort()
+                        .each(function (d, j) {
+                          select.add(new Option(d));
+                        });
+                    }
+                  });
+                this.api().draw();
+                hideSpinner();
+              },
+            });
           });
         });
     </script>
