@@ -29,18 +29,22 @@ jobs:
           #- 'www.comune.gattatico.re.it'
           #- 'www.comune.montecchio-emilia.re.it'
     steps:
-    - uses: actions/checkout@v4
-    - name: Run audit
-      uses: ./
-      with:
-        url: https://${{ matrix.hostname }}
-        type: 'municipality'
-        scope: 'online'
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: audit-${{ matrix.hostname }}
-        path: ./report
+      - name: Cache Docker images.
+        uses: ScribeMD/docker-cache@0.5.0
+        with:
+          key: docker-${{ runner.os }}-${{ hashFiles('Dockerfile') }}
+      - uses: actions/checkout@v4
+      - name: Run audit
+        uses: ./
+        with:
+          url: https://${{ matrix.hostname }}
+          type: 'municipality'
+          scope: 'online'
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-${{ matrix.hostname }}
+          path: ./report
 
   download-artifact:
     runs-on: ubuntu-latest
