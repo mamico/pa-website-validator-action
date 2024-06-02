@@ -1,8 +1,17 @@
 name: PA WebSite Audit
-on: 
-  - push
-  # - pull_request
-  - workflow_dispatch
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      hostname:
+        description: 'hostname to audit'
+        required: true
+        # TODO: use choices
+        default: www.comune.bibbiano.re.it
 
 jobs:
   audit:
@@ -12,25 +21,33 @@ jobs:
       fail-fast: false
       matrix:
         hostname:
-          - 'v3.io-comune.redturtle.it'
-          - 'www.comune.bibbiano.re.it'
-          - 'www.comune.camposanto.mo.it'
-          - 'www.comune.cavriago.re.it'
-          - 'www.comune.modena.it'
-          - 'www.comune.laspezia.it'
-          - 'www.comune.mirandola.mo.it'
-          - 'www.comune.novellara.re.it'
-          - 'www.comune.rolo.re.it'
-          - 'www.comune.sanpossidonio.mo.it'
-          - 'www.comune.sanpolodenza.re.it'
-          - 'www.comune.campegine.re.it'
-          - 'www.comune.canossa.re.it'
-          - 'www.comune.santilariodenza.re.it'
-          - 'www.comune.gattatico.re.it'
-          - 'www.comune.montecchio-emilia.re.it'
+          - v3.io-comune.redturtle.it
+          - www.comune.bibbiano.re.it
+          - www.comune.camposanto.mo.it
+          - www.comune.cavriago.re.it
+          - www.comune.modena.it
+          - www.comune.laspezia.it
+          - www.comune.mirandola.mo.it
+          - www.comune.novellara.re.it
+          - www.comune.rolo.re.it
+          - www.comune.sanpossidonio.mo.it
+          - www.comune.sanpolodenza.re.it
+          - www.comune.campegine.re.it
+          - www.comune.canossa.re.it
+          - www.comune.santilariodenza.re.it
+          - www.comune.gattatico.re.it
+          - www.comune.montecchio-emilia.re.it
     steps:
     - uses: actions/checkout@v4
+    - name: Run manual audit
+      if: github.event_name == 'workflow_dispatch'
+      uses: ./
+      with:
+        url: https://${{ github.event.inputs.hostname }}
+        type: 'municipality'
+        scope: 'online'
     - name: Run audit
+      if: github.event_name != 'workflow_dispatch'
       uses: ./
       with:
         url: https://${{ matrix.hostname }}
@@ -38,6 +55,13 @@ jobs:
         scope: 'online'
     - name: Upload artifact
       uses: actions/upload-artifact@v4
+      if: github.event_name == 'workflow_dispatch'
+      with:
+        name: audit-${{ github.event.inputs.hostname }}
+        path: ./report
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      if: github.event_name != 'workflow_dispatch'
       with:
         name: audit-${{ matrix.hostname }}
         path: ./report
@@ -53,10 +77,6 @@ jobs:
           path: ./audits
           pattern: audit-*
           merge-multiple: true
-      - name: List files (debug)
-        run: |
-          pwd
-          ls -l ./audits
       - name: Publish HTML/JSON audit reports
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -75,7 +95,7 @@ jobs:
         with:
           ref: gh-pages
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - name: Run process audit
@@ -90,4 +110,4 @@ jobs:
           keep_files: true
           user_name: 'github-actions[bot]' # This will be the username that gets stamped in the repo commit
           user_email: 'github-actions[bot]@users.noreply.github.com' # This will be the user email that gets stamped in the repo commit
-  
+
