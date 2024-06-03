@@ -37,6 +37,14 @@ jobs:
           - www.comune.santilariodenza.re.it
           - www.comune.gattatico.re.it
           - www.comune.montecchio-emilia.re.it
+          - www.comune.sanlazzaro.bo.it
+          - www.comune.serrenti.su.it
+          - www.comune.toscolanomaderno.bs.it
+          - www.comune.casteldelrio.bo.it/it
+          - www.comune.borgotossignano.bo.it
+          - www.comune.casalfiumanese.bo.it
+          - www.comune.fontanelice.bo.it
+          - www.comune.castelguelfo.bo.it
     steps:
     - uses: actions/checkout@v4
     - name: Run manual audit
