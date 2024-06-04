@@ -14,6 +14,9 @@ OUTPUT_FILENAME=$(echo "$REPORT_URL" | sed 's/^https?:\/\///'| sed 's/[^a-zA-Z0-
 OUTPUT_PATH="$GITHUB_WORKSPACE/$OUTPUT_FOLDER/$(date +%Y-%m-%d_%H-%M-%S)_$OUTPUT_FILENAME"
 mkdir -p "$OUTPUT_FOLDER"
 
+# DEBUG, where am I from
+curl -o - https://reallyfreegeoip.org/json/
+
 # Clarify in logs which URL we're auditing.
 printf "* Beginning audit of %s ...\n\n" "$REPORT_URL"
 pa-website-validator --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE"
