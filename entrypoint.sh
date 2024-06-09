@@ -42,7 +42,7 @@ printf "\n* Completed audit of %s ! Scores are printed below:\n\n" "$REPORT_URL"
 #printf "|  SEO:                   %.0f\t|\n" "$(echo "$SCORE_SEO*100" | bc -l)"
 #printf "|  Progressive Web App:   %.0f\t|\n" "$(echo "$SCORE_PWA*100" | bc -l)"
 #printf "+-------------------------------+\n\n"
-jq '.categories[] | @text "| \(.id): \(.score * 100) | \(.description) |"'
+jq '.categories[] | @text "| \(.id): \(.score * 100) | \(.description) |"' "$OUTPUT_PATH/report.json"
 
 # printf "* Detailed results are saved here, use https://github.com/actions/upload-artifact to retrieve them:\n"
 printf "    %s\n" "$OUTPUT_PATH/report.html"
