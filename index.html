@@ -1,124 +1,118 @@
 <!doctype html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
-    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
-  </head>
-  <body>
-    <header class="container">
-      <h1>PA Website validator</h1>
-      <p>
-        This page shows the results of the audits of the PA websites.
-        <a href="https://github.com/mamico/pa-website-validator-action"
-          >Source code</a
-        >
-      </p>
-    </header>
-    <article class="container-fluid">
-      <table id="audits" class="table table-striped nowrap" style="width: 100%">
-        <thead></thead>
-        <tbody></tbody>
-      </table>
-    </article>
-    <script>
-      $.fn.dataTable.ext.type.order["dt-string-asc"] = function (a, b) {
-        return a.date.localeCompare(b.date);
-      };
-      $.fn.dataTable.ext.type.order["dt-string-desc"] = function (a, b) {
-        return -a.date.localeCompare(b.date);
-      };
-      fetch("./audit.json")
-        .then((res) => res.json())
-        .then((data) => {
-          const columns = Object.keys(data[0]).map((key) => ({
-            name: key,
-            data: key,
-            title: key,
-            render: function (data, type) {
-              if (type === "display") {
-                if (key === "report") {
-                  return `<a href="${data.url}" target="_blank">${new Date(
-                    data.date,
-                  ).toLocaleString((locales = "it"), {
-                    year: "numeric",
-                    month: "short",
-                    day: "2-digit",
-                    weekday: "long",
-                    hour: "2-digit",
-                    minute: "2-digit",
-                    timeZoneName: "short",
-                  })}</a>`;
-                }
-                if (key === "site") {
-                  return `<button onclick="filterBySite('${data}')">Filter</button> <a href="${data}" target="_blank">${data}</a> `;
-                }
-                return data;
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+  <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+</head>
+
+<body>
+  <header class="container">
+    <h1>PA Website validator</h1>
+    <p>
+      This page shows the results of the audits of the PA websites.
+      <a href="https://github.com/mamico/pa-website-validator-action">Source code</a>
+    </p>
+  </header>
+  <article class="container-fluid">
+    <table id="audits" class="table table-striped nowrap" style="width: 100%">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </article>
+  <script>
+    $.fn.dataTable.ext.type.order["dt-string-asc"] = function (a, b) {
+      return a.date.localeCompare(b.date);
+    };
+    $.fn.dataTable.ext.type.order["dt-string-desc"] = function (a, b) {
+      return -a.date.localeCompare(b.date);
+    };
+    fetch("./audit.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const columns = Object.keys(data[0]).map((key) => ({
+          name: key,
+          data: key,
+          title: key,
+          render: function (data, type) {
+            if (type === "display") {
+              if (key === "report") {
+                return `<a href="${data.url}" target="_blank">${new Date(
+                  data.date,
+                ).toLocaleString((locales = "it"), {
+                  year: "numeric",
+                  month: "short",
+                  day: "2-digit",
+                  weekday: "long",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  timeZoneName: "short",
+                })}</a>`;
+              }
+              if (key === "site") {
+                return `<button onclick="filterBySite('${data}')" type="button" class="btn btn-outline-secondary btn-sm"><i class="fas fa-filter"></i>Filter</button> <a href="${data}" target="_blank">${data}</a> `;
               }
               return data;
-            },
-            orderable: !["site"].includes(key),
-          }));
+            }
+            return data;
+          },
+          orderable: !["site"].includes(key),
+        }));
 
-          const table = new DataTable("#audits", {
-            columns: columns,
-            columnDefs: [{ type: "dt-string", targets: 0 }],
-            scrollX: true,
-            order: [[0, "desc"]],
-            data: data,
-            responsive: true,
-            lengthMenu: [25, 50, 100, { label: "All", value: -1 }],
-            initComplete: function () {
-              this.api()
-                .columns()
-                .every(function () {
-                  let column = this;
-                  if (["site"].includes(column.header().textContent)) {
-                    let select = document.createElement("select");
-                    select.id = `filter-${column.title()}`;
-                    select.add(new Option("Tutti", ""));
-                    column.header().append(select);
-                    select.addEventListener("change", function () {
-                      column.search(select.value, { exact: true }).draw();
+        const table = new DataTable("#audits", {
+          columns: columns,
+          columnDefs: [{ type: "dt-string", targets: 0 }],
+          scrollX: true,
+          order: [[0, "desc"]],
+          data: data,
+          responsive: true,
+          lengthMenu: [25, 50, 100, { label: "All", value: -1 }],
+          initComplete: function () {
+            this.api()
+              .columns()
+              .every(function () {
+                let column = this;
+                if (["site"].includes(column.header().textContent)) {
+                  let select = document.createElement("select");
+                  select.id = `filter-${column.title()}`;
+                  select.add(new Option("Tutti", ""));
+                  column.header().append(select);
+                  select.addEventListener("change", function () {
+                    column.search(select.value, { exact: true }).draw();
+                  });
+                  column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                      select.add(new Option(d));
                     });
-                    column
-                      .data()
-                      .unique()
-                      .sort()
-                      .each(function (d, j) {
-                        select.add(new Option(d));
-                      });
-                  }
-                });
-              this.api().draw();
-            },
-          });
-
-          window.filterBySite = function (site) {
-            if ($(`#filter-site`).val() !== site) {
-              $(`#filter-site`).val(site)[0].dispatchEvent(new Event("change"));
-            }
-            else {
-              $(`#filter-site`).val("")[0].dispatchEvent(new Event("change"));
-            }
-          };
+                }
+              });
+            this.api().draw();
+          },
         });
-    </script>
-  </body>
+
+        window.filterBySite = function (site) {
+          if ($(`#filter-site`).val() !== site) {
+            $(`#filter-site`).val(site)[0].dispatchEvent(new Event("change"));
+          }
+          else {
+            $(`#filter-site`).val("")[0].dispatchEvent(new Event("change"));
+          }
+        };
+      });
+  </script>
+</body>
+
 </html>
