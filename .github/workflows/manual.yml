@@ -1,57 +1,56 @@
-name: PA WebSite Audit
+name: PA WebSite Audit Manual
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-
+  workflow_dispatch:
+    inputs:
+      hostname:
+        description: 'hostname to audit'
+        required: true
+        type: choice
+        options:
+        - v3.io-comune.redturtle.it
+        - www.comune.bibbiano.re.it
+        - www.comune.camposanto.mo.it
+        - www.comune.cavriago.re.it
+        - www.comune.modena.it
+        - www.comune.laspezia.it
+        - www.comune.mirandola.mo.it
+        - www.comune.novellara.re.it
+        - www.comune.rolo.re.it
+        - www.comune.sanpossidonio.mo.it
+        - www.comune.sanpolodenza.re.it
+        - www.comune.campegine.re.it
+        - www.comune.canossa.re.it
+        - www.comune.santilariodenza.re.it
+        - www.comune.gattatico.re.it
+        - www.comune.montecchio-emilia.re.it
+        - www.comune.sanlazzaro.bo.it
+        - www.comune.serrenti.su.it
+        - www.comune.toscolanomaderno.bs.it
+        - www.comune.casteldelrio.bo.it
+        - www.comune.borgotossignano.bo.it
+        - www.comune.casalfiumanese.bo.it
+        - www.comune.fontanelice.bo.it
+        - www.comune.castelguelfo.bo.it
 jobs:
   audit:
     runs-on: ubuntu-latest
     strategy:
       # max-parallel: 4
       fail-fast: false
-      matrix:
-        hostname:
-          - v3.io-comune.redturtle.it
-          - www.comune.bibbiano.re.it
-          - www.comune.camposanto.mo.it
-          - www.comune.cavriago.re.it
-          - www.comune.modena.it
-          - www.comune.laspezia.it
-          - www.comune.mirandola.mo.it
-          - www.comune.novellara.re.it
-          - www.comune.rolo.re.it
-          - www.comune.sanpossidonio.mo.it
-          - www.comune.sanpolodenza.re.it
-          - www.comune.campegine.re.it
-          - www.comune.canossa.re.it
-          - www.comune.santilariodenza.re.it
-          - www.comune.gattatico.re.it
-          - www.comune.montecchio-emilia.re.it
-          - www.comune.sanlazzaro.bo.it
-          - www.comune.serrenti.su.it
-          - www.comune.toscolanomaderno.bs.it
-          - www.comune.casteldelrio.bo.it
-          - www.comune.borgotossignano.bo.it
-          - www.comune.casalfiumanese.bo.it
-          - www.comune.fontanelice.bo.it
-          - www.comune.castelguelfo.bo.it
     steps:
     - uses: actions/checkout@v4
-    - name: Run audit
+    - name: Run manual audit
       uses: ./
       with:
-        url: https://${{ matrix.hostname }}
+        url: https://${{ github.event.inputs.hostname }}
         type: 'municipality'
         scope: 'online'
         accuracy: 'all'
-        # accuracy: 'suggested'
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        name: audit-${{ matrix.hostname }}
+        name: audit-${{ github.event.inputs.hostname }}
         path: ./report
 
   download-artifact:
