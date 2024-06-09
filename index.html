@@ -67,7 +67,7 @@
                   })}</a>`;
                 }
                 if (key === "site") {
-                  return `<a href="${data}" target="_blank">${data}</a>`;
+                  return `<button onclick="filterBySite('${data}')">Filter</button> <a href="${data}" target="_blank">${data}</a> `;
                 }
                 return data;
               }
@@ -76,7 +76,7 @@
             orderable: !["site"].includes(key),
           }));
 
-          new DataTable("#audits", {
+          const table = new DataTable("#audits", {
             columns: columns,
             columnDefs: [{ type: "dt-string", targets: 0 }],
             scrollX: true,
@@ -91,7 +91,8 @@
                   let column = this;
                   if (["site"].includes(column.header().textContent)) {
                     let select = document.createElement("select");
-                    select.add(new Option(""));
+                    select.id = `filter-${column.title()}`;
+                    select.add(new Option("Tutti", ""));
                     column.header().append(select);
                     select.addEventListener("change", function () {
                       column.search(select.value, { exact: true }).draw();
@@ -108,6 +109,15 @@
               this.api().draw();
             },
           });
+
+          window.filterBySite = function (site) {
+            if ($(`#filter-site`).val() !== site) {
+              $(`#filter-site`).val(site)[0].dispatchEvent(new Event("change"));
+            }
+            else {
+              $(`#filter-site`).val("")[0].dispatchEvent(new Event("change"));
+            }
+          };
         });
     </script>
   </body>
