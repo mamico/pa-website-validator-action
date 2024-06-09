@@ -1629,6 +1629,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T08:50:47.981Z",
+      "url": "./2024-06-09_08-50-46_https___www_comune_bibbiano_re_it/report.html"
+    },
+    "site": "https://www.comune.bibbiano.re.it/",
+    "performance": 27,
+    "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
+  },
+  {
+    "report": {
       "date": "2024-06-01T08:41:55.544Z",
       "url": "./2024-06-01_08-41-54_https___www_comune_camposanto_mo_it/report.html"
     },
