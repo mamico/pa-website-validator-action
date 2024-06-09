@@ -10,6 +10,9 @@ inputs:
   scope:
     description: 'local|online'
     required: true
+  accuracy:
+    description: 'min|suggested (defautl)|high|all'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
