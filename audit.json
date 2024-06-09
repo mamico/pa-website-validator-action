@@ -188,6 +188,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T17:11:48.537Z",
+      "url": "./2024-06-09_17-11-46_https___www_comune_toscolanomaderno_bs_it/report.html"
+    },
+    "site": "https://www.comune.toscolanomaderno.bs.it/",
+    "performance": 26,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 94
+  },
+  {
+    "report": {
       "date": "2023-04-26T12:33:10.250Z",
       "url": "./2023-04-26_12-33-09_https___v3_io_comune_redturtle_it/report.html"
     },
@@ -306,6 +317,17 @@
     "modelComplianceInformation": 0,
     "reccomandationsAndAdditionalTests": 100,
     "additionalTests": 68
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:07.368Z",
+      "url": "./2024-06-09_16-53-05_https___www_comune_canossa_re_it/report.html"
+    },
+    "site": "https://www.comune.canossa.re.it/",
+    "performance": 16,
+    "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 94
   },
   {
     "report": {
@@ -452,12 +474,34 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:53:59.145Z",
+      "url": "./2024-06-09_16-53-57_https___www_comune_modena_it/report.html"
+    },
+    "site": "https://www.comune.modena.it/",
+    "performance": 11,
+    "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
+  },
+  {
+    "report": {
       "date": "2024-06-01T21:33:49.011Z",
       "url": "./2024-06-01_21-33-47_https___www_comune_campegine_re_it/report.html"
     },
     "site": "https://www.comune.campegine.re.it/",
     "performance": 19,
     "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:27.353Z",
+      "url": "./2024-06-09_16-53-25_https___www_comune_cavriago_re_it/report.html"
+    },
+    "site": "https://www.comune.cavriago.re.it/",
+    "performance": 28,
+    "modelComplianceInformation": 0,
     "reccomandationsAndAdditionalTests": 100,
     "additionalTests": 95
   },
@@ -482,6 +526,17 @@
     "modelComplianceInformation": 89,
     "reccomandationsAndAdditionalTests": 100,
     "additionalTests": 94
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:27.592Z",
+      "url": "./2024-06-09_16-53-25_https___www_comune_bibbiano_re_it/report.html"
+    },
+    "site": "https://www.comune.bibbiano.re.it/",
+    "performance": 28,
+    "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
   },
   {
     "report": {
@@ -628,6 +683,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:54:00.229Z",
+      "url": "./2024-06-09_16-53-58_https___www_comune_novellara_re_it/report.html"
+    },
+    "site": "https://www.comune.novellara.re.it/",
+    "performance": 18,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 50,
+    "additionalTests": 93
+  },
+  {
+    "report": {
       "date": "2024-03-08T13:16:34.103Z",
       "url": "./2024-03-08_13-16-32_https___www_comune_mirandola_mo_it_/report.html"
     },
@@ -702,6 +768,17 @@
     "modelComplianceInformation": 92,
     "reccomandationsAndAdditionalTests": 0,
     "additionalTests": 93
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:56:18.675Z",
+      "url": "./2024-06-09_16-56-16_https___www_comune_sanpolodenza_re_it/report.html"
+    },
+    "site": "https://www.comune.sanpolodenza.re.it/",
+    "performance": 24,
+    "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
   },
   {
     "report": {
@@ -1024,6 +1101,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T17:08:09.741Z",
+      "url": "./2024-06-09_17-08-07_https___www_comune_santilariodenza_re_it/report.html"
+    },
+    "site": "https://www.comune.santilariodenza.re.it/",
+    "performance": 21,
+    "modelComplianceInformation": 92,
+    "reccomandationsAndAdditionalTests": 50,
+    "additionalTests": 94
+  },
+  {
+    "report": {
       "date": "2024-06-01T21:34:24.056Z",
       "url": "./2024-06-01_21-34-22_https___www_comune_mirandola_mo_it/report.html"
     },
@@ -1076,6 +1164,17 @@
     "modelComplianceInformation": 89,
     "reccomandationsAndAdditionalTests": 100,
     "additionalTests": 95
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:09.681Z",
+      "url": "./2024-06-09_16-53-07_https___www_comune_fontanelice_bo_it/report.html"
+    },
+    "site": "https://www.comune.fontanelice.bo.it/",
+    "performance": 32,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 50,
+    "additionalTests": 93
   },
   {
     "report": {
@@ -1321,6 +1420,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:53:59.938Z",
+      "url": "./2024-06-09_16-53-57_https___www_comune_rolo_re_it/report.html"
+    },
+    "site": "https://www.comune.rolo.re.it/",
+    "performance": 22,
+    "modelComplianceInformation": 92,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
+  },
+  {
+    "report": {
       "date": "2023-11-09T08:44:54.662Z",
       "url": "./2023-11-09_08-44-52_https___www_comune_laspezia_it/report.html"
     },
@@ -1530,6 +1640,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:53:23.123Z",
+      "url": "./2024-06-09_16-53-21_https___v3_io_comune_redturtle_it/report.html"
+    },
+    "site": "https://v3.io-comune.redturtle.it/",
+    "performance": 9,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 50,
+    "additionalTests": 95
+  },
+  {
+    "report": {
       "date": "2024-02-01T08:35:47.866Z",
       "url": "./2024-02-01_08-35-46_https___www_comune_bibbiano_re_it_/report.html"
     },
@@ -1651,6 +1772,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:53:55.503Z",
+      "url": "./2024-06-09_16-53-53_https___www_comune_montecchio_emilia_re_it/report.html"
+    },
+    "site": "https://www.comune.montecchio-emilia.re.it/",
+    "performance": 26,
+    "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
+  },
+  {
+    "report": {
       "date": "2024-06-04T07:12:14.815Z",
       "url": "./2024-06-04_07-12-13_https___www_comune_rolo_re_it/report.html"
     },
@@ -1679,6 +1811,17 @@
     "site": "https://www.comune.campegine.re.it/",
     "performance": 18,
     "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:03.551Z",
+      "url": "./2024-06-09_16-53-01_https___www_comune_gattatico_re_it/report.html"
+    },
+    "site": "https://www.comune.gattatico.re.it/",
+    "performance": 25,
+    "modelComplianceInformation": 0,
     "reccomandationsAndAdditionalTests": 100,
     "additionalTests": 95
   },
@@ -1849,6 +1992,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:56:03.556Z",
+      "url": "./2024-06-09_16-56-01_https___www_comune_sanpossidonio_mo_it/report.html"
+    },
+    "site": "https://www.comune.sanpossidonio.mo.it/",
+    "performance": 18,
+    "modelComplianceInformation": 83,
+    "reccomandationsAndAdditionalTests": 50,
+    "additionalTests": 95
+  },
+  {
+    "report": {
       "date": "2024-06-04T14:57:48.207Z",
       "url": "./2024-06-04_14-57-46_https___www_comune_novellara_re_it/report.html"
     },
@@ -1912,6 +2066,17 @@
     "modelComplianceInformation": 12,
     "reccomandationsAndAdditionalTests": 0,
     "additionalTests": 94
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:18.623Z",
+      "url": "./2024-06-09_16-53-16_https___www_comune_camposanto_mo_it/report.html"
+    },
+    "site": "https://www.comune.camposanto.mo.it/",
+    "performance": 26,
+    "modelComplianceInformation": 94,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
   },
   {
     "report": {
@@ -2124,12 +2289,34 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:53:19.461Z",
+      "url": "./2024-06-09_16-53-17_https___www_comune_casalfiumanese_bo_it/report.html"
+    },
+    "site": "https://www.comune.casalfiumanese.bo.it/",
+    "performance": 32,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 92
+  },
+  {
+    "report": {
       "date": "2024-03-08T13:17:13.346Z",
       "url": "./2024-03-08_13-17-11_https___www_comune_bibbiano_re_it_/report.html"
     },
     "site": "https://www.comune.bibbiano.re.it/",
     "performance": 31,
     "modelComplianceInformation": 79,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 95
+  },
+  {
+    "report": {
+      "date": "2024-06-09T17:11:36.766Z",
+      "url": "./2024-06-09_17-11-34_https___www_comune_serrenti_su_it/report.html"
+    },
+    "site": "https://www.comune.serrenti.su.it/",
+    "performance": 27,
+    "modelComplianceInformation": 89,
     "reccomandationsAndAdditionalTests": 100,
     "additionalTests": 95
   },
@@ -2165,6 +2352,17 @@
     "modelComplianceInformation": 84,
     "reccomandationsAndAdditionalTests": 50,
     "additionalTests": 93
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:03.053Z",
+      "url": "./2024-06-09_16-53-01_https___www_comune_borgotossignano_bo_it/report.html"
+    },
+    "site": "https://www.comune.borgotossignano.bo.it/",
+    "performance": 23,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 92
   },
   {
     "report": {
@@ -2223,6 +2421,28 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:53:42.865Z",
+      "url": "./2024-06-09_16-53-40_https___www_comune_mirandola_mo_it/report.html"
+    },
+    "site": "https://www.comune.mirandola.mo.it/",
+    "performance": 38,
+    "modelComplianceInformation": 44,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 94
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:08.259Z",
+      "url": "./2024-06-09_16-53-06_https___www_comune_laspezia_it/report.html"
+    },
+    "site": "https://www.comune.laspezia.it/",
+    "performance": 21,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 0,
+    "additionalTests": 95
+  },
+  {
+    "report": {
       "date": "2024-06-01T21:34:55.154Z",
       "url": "./2024-06-01_21-34-53_https___www_comune_rolo_re_it/report.html"
     },
@@ -2275,6 +2495,17 @@
     "modelComplianceInformation": 89,
     "reccomandationsAndAdditionalTests": 50,
     "additionalTests": 62
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:03.934Z",
+      "url": "./2024-06-09_16-53-02_https___www_comune_castelguelfo_bo_it/report.html"
+    },
+    "site": "https://www.comune.castelguelfo.bo.it/",
+    "performance": 12,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 92
   },
   {
     "report": {
@@ -2366,6 +2597,17 @@
   },
   {
     "report": {
+      "date": "2024-06-09T16:53:33.857Z",
+      "url": "./2024-06-09_16-53-31_https___www_comune_casteldelrio_bo_it/report.html"
+    },
+    "site": "https://www.comune.casteldelrio.bo.it/it",
+    "performance": 24,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 88
+  },
+  {
+    "report": {
       "date": "2024-06-01T21:33:43.145Z",
       "url": "./2024-06-01_21-33-41_https___www_comune_camposanto_mo_it/report.html"
     },
@@ -2374,6 +2616,17 @@
     "modelComplianceInformation": 94,
     "reccomandationsAndAdditionalTests": 100,
     "additionalTests": 67
+  },
+  {
+    "report": {
+      "date": "2024-06-09T16:53:13.645Z",
+      "url": "./2024-06-09_16-53-11_https___www_comune_campegine_re_it/report.html"
+    },
+    "site": "https://www.comune.campegine.re.it/",
+    "performance": 22,
+    "modelComplianceInformation": 89,
+    "reccomandationsAndAdditionalTests": 50,
+    "additionalTests": 95
   },
   {
     "report": {
