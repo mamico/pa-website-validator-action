@@ -38,6 +38,7 @@ jobs:
           - www.comune.casalfiumanese.bo.it
           - www.comune.fontanelice.bo.it
           - www.comune.castelguelfo.bo.it
+          - www.comune.re.it
     steps:
     - uses: actions/checkout@v4
     - name: Run audit
