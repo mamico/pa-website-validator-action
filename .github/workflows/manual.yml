@@ -32,6 +32,7 @@ on:
         - www.comune.casalfiumanese.bo.it
         - www.comune.fontanelice.bo.it
         - www.comune.castelguelfo.bo.it
+        - www.comune.re.it
 jobs:
   audit:
     runs-on: ubuntu-latest
