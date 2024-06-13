@@ -15,53 +15,52 @@ jobs:
       fail-fast: false
       matrix:
         hostname:
+          - comune.lignano-sabbiadoro.ud.it
           - v3.io-comune.redturtle.it
-          - www.comune.camposanto.mo.it
-          - www.comune.cavezzo.mo.it
-          - www.comune.concordia.mo.it
-          - www.comune.finale.mo.it
-          - www.comune.medolla.mo.it
-          - www.comune.sanfelice.mo.it
-          - www.comune.sanpossidonio.mo.it
-          - www.comune.sanprospero.mo.it
           - www.comune.bibbiano.re.it
-          - www.comune.cavriago.re.it
-          - www.comune.sanpolodenza.re.it
-          - www.comune.campegine.re.it
-          - www.comune.canossa.re.it
-          - www.comune.santilariodenza.re.it
-          - www.comune.gattatico.re.it
-          - www.comune.montecchio-emilia.re.it
-          - www.comune.casteldelrio.bo.it
           - www.comune.borgotossignano.bo.it
+          - www.comune.campegine.re.it
+          - www.comune.camposanto.mo.it
+          - www.comune.canossa.re.it
           - www.comune.casalfiumanese.bo.it
-          - www.comune.fontanelice.bo.it
+          - www.comune.casteldelrio.bo.it
           - www.comune.castelguelfo.bo.it
           - www.comune.castelsanpietroterme.bo.it
+          - www.comune.cavezzo.mo.it
+          - www.comune.cavriago.re.it
+          - www.comune.concordia.mo.it
           - www.comune.dozza.bo.it
-          - www.comune.imola.bo.it
-          - www.comune.mordano.bo.it
-          - www.comune.medicina.bo.it
-          - www.comune.fontanelice.bo.it
+          - www.comune.finale.mo.it
           - www.comune.fiorano-modenese.mo.it
+          - www.comune.fontanelice.bo.it
           - www.comune.formigine.mo.it
           - www.comune.frassinoro.mo.it
-          - www.comune.maranello.mo.it
-          - www.comune.montefiorino.mo.it
-          - www.comune.palagano.mo.it
-          - www.comune.prignano.mo.it
-          - www.comune.sassuolo.mo.it
-          - www.comune.modena.it
+          - www.comune.gattatico.re.it
+          - www.comune.imola.bo.it
           - www.comune.laspezia.it
+          - www.comune.maranello.mo.it
+          - www.comune.medicina.bo.it
+          - www.comune.medolla.mo.it
           - www.comune.mirandola.mo.it
+          - www.comune.modena.it
+          - www.comune.montecchio-emilia.re.it
+          - www.comune.montefiorino.mo.it
+          - www.comune.mordano.bo.it
           - www.comune.novellara.re.it
+          - www.comune.palagano.mo.it
+          - www.comune.parma.it
+          - www.comune.prignano.mo.it
+          - www.comune.re.it
           - www.comune.rolo.re.it
+          - www.comune.sanfelice.mo.it
           - www.comune.sanlazzaro.bo.it
+          - www.comune.sanpolodenza.re.it
+          - www.comune.sanpossidonio.mo.it
+          - www.comune.sanprospero.mo.it
+          - www.comune.santilariodenza.re.it
+          - www.comune.sassuolo.mo.it
           - www.comune.serrenti.su.it
           - www.comune.toscolanomaderno.bs.it
-          - www.comune.re.it
-          - www.comune.parma.it
-          - comune.lignano-sabbiadoro.ud.it
     steps:
     - uses: actions/checkout@v4
     - name: Run audit
