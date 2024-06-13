@@ -1827,6 +1827,17 @@
   },
   {
     "report": {
+      "date": "2024-06-13T16:53:44.154Z",
+      "url": "./2024-06-13_16-53-42_https___www_comune_montefiorino_mo_it/report.html"
+    },
+    "site": "https://www.comune.montefiorino.mo.it/",
+    "performance": 19,
+    "modelComplianceInformation": 92,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 96
+  },
+  {
+    "report": {
       "date": "2024-06-04T14:58:16.295Z",
       "url": "./2024-06-04_14-58-14_https___www_comune_canossa_re_it/report.html"
     },
