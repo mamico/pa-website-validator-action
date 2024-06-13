@@ -33,6 +33,14 @@ on:
         - www.comune.fontanelice.bo.it
         - www.comune.castelguelfo.bo.it
         - www.comune.re.it
+        - www.comune.fiorano-modenese.mo.it
+        - www.comune.formigine.mo.it
+        - www.comune.frassinoro.mo.it
+        - www.comune.maranello.mo.it
+        - www.comune.montefiorino.mo.it
+        - www.comune.palagano.mo.it
+        - www.comune.prignano.mo.it
+        - www.comune.sassuolo.mo.it
 jobs:
   audit:
     runs-on: ubuntu-latest
