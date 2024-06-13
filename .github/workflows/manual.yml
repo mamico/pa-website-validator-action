@@ -1,4 +1,4 @@
-name: PA WebSite Audit Manual
+name: PA WebSite Audit Single
 
 on:
   workflow_dispatch:
