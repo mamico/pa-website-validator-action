@@ -3,6 +3,12 @@ name: PA WebSite Audit Single
 on:
   workflow_dispatch:
     inputs:
+      accuracy:
+        description: accuracy
+        required: true
+        type: choice
+        default: suggested
+        options: ["min", "suggested", "high", "all"]
       hostname:
         description: 'hostname to audit'
         required: true
@@ -68,7 +74,7 @@ jobs:
         url: https://${{ github.event.inputs.hostname }}
         type: 'municipality'
         scope: 'online'
-        accuracy: 'all'
+        accuracy: github.event.inputs.accuracy
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
