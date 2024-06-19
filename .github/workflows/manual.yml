@@ -74,7 +74,7 @@ jobs:
         url: https://${{ github.event.inputs.hostname }}
         type: 'municipality'
         scope: 'online'
-        accuracy: github.event.inputs.accuracy
+        accuracy: ${{ github.event.inputs.accuracy }}
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
