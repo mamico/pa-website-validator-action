@@ -4258,6 +4258,17 @@
   },
   {
     "report": {
+      "date": "2024-07-03T13:07:59.540Z",
+      "url": "./2024-07-03_13-07-57_https___www_comune_re_it/report.html"
+    },
+    "site": "https://www.comune.re.it/",
+    "performance": 19,
+    "modelComplianceInformation": 84,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 97
+  },
+  {
+    "report": {
       "date": "2024-06-14T15:13:33.306Z",
       "url": "./2024-06-14_15-13-31_https___www_comune_parma_it/report.html"
     },
