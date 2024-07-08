@@ -3466,6 +3466,17 @@
   },
   {
     "report": {
+      "date": "2024-07-08T12:09:17.852Z",
+      "url": "./2024-07-08_12-09-15_https___www_comune_castelguelfo_bo_it/report.html"
+    },
+    "site": "https://www.comune.castelguelfo.bo.it/",
+    "performance": 11,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 92
+  },
+  {
+    "report": {
       "date": "2024-06-25T07:28:10.347Z",
       "url": "./2024-06-25_07-28-08_https___www_comune_concordia_mo_it/report.html"
     },
