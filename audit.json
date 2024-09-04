@@ -485,6 +485,17 @@
   },
   {
     "report": {
+      "date": "2024-09-04T10:46:58.425Z",
+      "url": "./2024-09-04_10-46-56_https___www_comune_camposanto_mo_it/report.html"
+    },
+    "site": "https://www.comune.camposanto.mo.it/",
+    "performance": 14,
+    "modelComplianceInformation": 0,
+    "reccomandationsAndAdditionalTests": 100,
+    "additionalTests": 94
+  },
+  {
+    "report": {
       "date": "2024-06-04T15:08:33.547Z",
       "url": "./2024-06-04_15-08-31_https___www_comune_toscolanomaderno_bs_it/report.html"
     },
