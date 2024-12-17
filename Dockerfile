@@ -1,5 +1,5 @@
 # Base image built from Dockerfile.base (Chrome Stable + Node LTS)
-FROM node:18
+FROM node:20
 
 LABEL "com.github.actions.name"="PA Website Validator Audit"
 LABEL "com.github.actions.description"="Run tests on a webpage via Italia PA Website Validator"
@@ -33,9 +33,7 @@ RUN apt-get update && apt-get install gnupg wget -y && \
 # RUN npm install -g pa-website-validator
 
 # Download master or tag from github
-# RUN git clone --branch develop https://github.com/mamico/pa-website-validator && \
-# RUN git clone --branch main https://github.com/italia/pa-website-validator && \
-RUN git clone --branch v2.11.4 https://github.com/italia/pa-website-validator && \
+RUN git clone --branch v1.1.12 https://github.com/italia/pa-website-validator-ng pa-website-validator && \
      cd pa-website-validator && \
      npm ci && \
      npm -g i .
@@ -57,3 +55,4 @@ USER headless
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
+# ENTRYPOINT ["sleep", "3600"]
