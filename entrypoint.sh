@@ -20,7 +20,8 @@ curl -o - https://reallyfreegeoip.org/json/
 # Clarify in logs which URL we're auditing.
 printf "* Beginning audit of %s ...\n\n" "$REPORT_URL"
 # pa-website-validator --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE" --accuracy "${INPUT_ACCURACY:-suggested}"
-node /pa-website-validator/dist --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE" --accuracy "${INPUT_ACCURACY:-suggested}"
+
+node /pa-website-validator/dist --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE" --accuracy "${INPUT_ACCURACY:-suggested}" --view false
 
 # Parse individual scores from JSON output.
 # Unorthodox jq syntax because of dashes -- https://github.com/stedolan/jq/issues/38
