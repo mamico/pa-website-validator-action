@@ -1,9 +1,16 @@
+Error parsing 2024-12-17_15-42-18_https___www_comune_camposanto_mo_it/report.json
+Traceback (most recent call last):
+  File "/home/runner/work/pa-website-validator-action/pa-website-validator-action/scripts/process_audit.py", line 19, in parse_files
+    'site': audit['finalUrl'],
+            ~~~~~^^^^^^^^^^^^
+KeyError: 'finalUrl'
+
 Error parsing 2024-12-17_14-30-27_https___v3_io_comune_redturtle_it/report.json
 Traceback (most recent call last):
-  File "/home/runner/work/pa-website-validator-action/pa-website-validator-action/scripts/process_audit.py", line 16, in parse_files
-    'date': audit['fetchTime'],
-            ~~~~~^^^^^^^^^^^^^
-KeyError: 'fetchTime'
+  File "/home/runner/work/pa-website-validator-action/pa-website-validator-action/scripts/process_audit.py", line 19, in parse_files
+    'site': audit['finalUrl'],
+            ~~~~~^^^^^^^^^^^^
+KeyError: 'finalUrl'
 
 [
   {
