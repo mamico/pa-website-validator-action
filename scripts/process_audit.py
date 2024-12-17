@@ -13,7 +13,7 @@ def parse_files():
             audit = json.load(open(file))
             item = {
                 'report': {
-                    'date': audit['fetchTime'],
+                    'date': audit.get('fetchTime'),
                     'url': f"./{file.replace('.json', '.html')}"
                 },
                 'site': audit['finalUrl'],
