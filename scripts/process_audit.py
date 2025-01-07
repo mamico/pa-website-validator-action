@@ -16,7 +16,7 @@ def parse_files():
                     'date': audit.get('fetchTime'),
                     'url': f"./{file.replace('.json', '.html')}"
                 },
-                'site': audit['finalUrl'],
+                'site': audit.get('finalUrl'),
                 'performance': int((audit['categories']['performance']['score'] or 0) * 100),
                 'modelComplianceInformation': int((audit['categories']['modelComplianceInformation']['score'] or 0) * 100),
                 'reccomandationsAndAdditionalTests': int((audit['categories']['reccomandationsAndAdditionalTests']['score'] or 0) * 100),
@@ -24,8 +24,9 @@ def parse_files():
             }
             data.append(item)
         except:
-            print(f"Error parsing {file}")
-            print(traceback.format_exc())
+            # print(f"Error parsing {file}")
+            # print(traceback.format_exc())
+            pass
     return data
 
 data = parse_files()
