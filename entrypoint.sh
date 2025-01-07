@@ -23,6 +23,10 @@ printf "* Beginning audit of %s ...\n\n" "$REPORT_URL"
 
 node /pa-website-validator/dist --max-old-space-size=8192 --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE" --accuracy "${INPUT_ACCURACY:-suggested}" --view false
 
+# Workaround for https://github.com/italia/pa-website-validator-ng/issues/7
+tmp=$(mktemp)
+jq '.finalUrl = "'${REPORT_URL}'"' ${OUTPUT_PATH}/report.json" > "$tmp" && mv "$tmp" ${OUTPUT_PATH}/report.json
+
 # Parse individual scores from JSON output.
 # Unorthodox jq syntax because of dashes -- https://github.com/stedolan/jq/issues/38
 # SCORE_PERFORMANCE=$(jq '.categories["performance"].score' "$OUTPUT_PATH"/report.json)
