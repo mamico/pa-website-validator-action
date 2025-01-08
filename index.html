@@ -83,6 +83,17 @@
               .every(function () {
                 let column = this;
                 if (["site"].includes(column.header().textContent)) {
+                  // let input = document.createElement("input", {list: 'sites'});
+                  // input.id = `filter-${column.title()}`;
+                  // // input.attributes.list = "sites"
+                  // let datalist = document.createElement("datalist");
+                  // datalist.id = "sites";
+                  // datalist.append(new Option("Tutti", ""));
+                  // column.header().append(input);
+                  // column.header().append(datalist);
+                  // input.addEventListener("change", function () {
+                  //   column.search(input.value, { exact: true }).draw();
+                  // });
                   let select = document.createElement("select");
                   select.id = `filter-${column.title()}`;
                   select.add(new Option("Tutti", ""));
@@ -96,6 +107,7 @@
                     .sort()
                     .each(function (d, j) {
                       select.add(new Option(d));
+                      // datalist.append(new Option(d, d));
                     });
                 }
               });
