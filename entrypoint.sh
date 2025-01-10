@@ -19,8 +19,17 @@ curl -o - https://reallyfreegeoip.org/json/
 
 # Clarify in logs which URL we're auditing.
 printf "* Beginning audit of %s ...\n\n" "$REPORT_URL"
-pa-website-validator --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE" --accuracy "${INPUT_ACCURACY:-suggested}"
-# node pa-website-validator/dist/index.js --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE"
+# pa-website-validator --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE" --accuracy "${INPUT_ACCURACY:-suggested}"
+
+node /pa-website-validator/dist --max-old-space-size=8192 --type "$INPUT_TYPE" --destination "${OUTPUT_PATH}" --report report --website "${REPORT_URL}" --scope "$INPUT_SCOPE" --accuracy "${INPUT_ACCURACY:-suggested}" --view false
+
+# Workaround for https://github.com/italia/pa-website-validator-ng/issues/7
+tmp=$(mktemp)
+jq '.requestedUrl = "'${INPUT_URL}'"' "${OUTPUT_PATH}/report.json" > "$tmp" && mv "$tmp" ${OUTPUT_PATH}/report.json
+tmp=$(mktemp)
+jq '.finalUrl = "'${INPUT_URL}'"' "${OUTPUT_PATH}/report.json" > "$tmp" && mv "$tmp" ${OUTPUT_PATH}/report.json
+tmp=$(mktemp)
+jq '.fetchTime = "'$(date +%Y-%m-%dT%H:%M:%S.000Z)'"' "${OUTPUT_PATH}/report.json" > "$tmp" && mv "$tmp" ${OUTPUT_PATH}/report.json
 
 # Parse individual scores from JSON output.
 # Unorthodox jq syntax because of dashes -- https://github.com/stedolan/jq/issues/38
