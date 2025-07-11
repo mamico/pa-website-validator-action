@@ -33,7 +33,7 @@ RUN apt-get update && apt-get install gnupg wget -y && \
 # RUN npm install -g pa-website-validator
 
 # Download master or tag from github
-RUN git clone --branch v1.1.20 https://github.com/italia/pa-website-validator-ng pa-website-validator && \
+RUN git clone --branch v1.1.24 https://github.com/italia/pa-website-validator-ng pa-website-validator && \
      cd pa-website-validator && \
      npm ci && \
      npm -g i .
