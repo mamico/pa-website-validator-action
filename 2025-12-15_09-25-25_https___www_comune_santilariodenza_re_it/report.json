@@ -1,0 +1,1827 @@
+{
+  "audits": {
+    "lighthouse": {
+      "score": 0.43,
+      "pagesItems": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "code": "C.SI.4.1",
+      "id": "lighthouse",
+      "title": "C.SI.4.1 - Velocità e tempi di risposta",
+      "mainTitle": "Velocità e tempi di risposta",
+      "auditId": "lighthouse",
+      "specificScore": 1
+    },
+    "municipality-ux-ui-consistency-bootstrap-italia-double-check": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [
+          "Pagine che utilizzano la libreria in una versione idonea e nelle quali almeno il 30% delle classi CSS uniche appartiene a Bootstrap Italia:",
+          "La libreria Bootstrap Italia è presente",
+          "Versione in uso",
+          "Classi CSS uniche appartenenti a BI"
+        ],
+        "pages": [
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "64%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "65%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/documenti-e-dati",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "64%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/anagrafe-e-stato-civile",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "67%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/enti-e-fondazioni",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "65%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "67%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/ambiente",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/prenotazione-appuntamenti-uffici/",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "67%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/notizie",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "65%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/aree-amministrative",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "65%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/personale-amministrativo",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "67%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/avvisi",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/organi-di-governo",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "65%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/autorizzazioni",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/uffici",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "64%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/agricoltura-e-pesca",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/politici",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "64%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/catasto-e-urbanistica",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giovani-biblioteche-e-sport",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/educazione-e-formazione",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giustizia-e-sicurezza-pubblica",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/mobilita-e-trasporti",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/imprese-e-commercio",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/salute-benessere-e-assistenza",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/luoghi",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "65%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/turismo",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "66%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/eventi",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "63%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/tributi-finanze-e-contravvenzioni",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "67%"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it",
+            "library_name": "Sì",
+            "library_version": "2.6.1",
+            "classes_found": "58%"
+          }
+        ]
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "error": false,
+      "code": "C.SI.1.2",
+      "id": "municipality-ux-ui-consistency-bootstrap-italia-double-check",
+      "title": "C.SI.1.2 - LIBRERIA DI ELEMENTI DI INTERFACCIA - Il sito comunale deve utilizzare la libreria Bootstrap Italia.",
+      "mainTitle": "LIBRERIA DI ELEMENTI DI INTERFACCIA",
+      "auditId": "municipality-ux-ui-consistency-bootstrap-italia-double-check",
+      "specificScore": 0
+    },
+    "municipality-legislation-cookie-domain-check": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [
+          "Pagine nelle quali sono stati rilevati solo cookie idonei:",
+          "Dominio del cookie",
+          "Nome del cookie",
+          "Valore del cookie"
+        ],
+        "pages": [
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/documenti-e-dati",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/documenti-e-dati",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/anagrafe-e-stato-civile",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/anagrafe-e-stato-civile",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/enti-e-fondazioni",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/enti-e-fondazioni",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/ambiente",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/ambiente",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/prenotazione-appuntamenti-uffici/",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/prenotazione-appuntamenti-uffici/",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/notizie",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/notizie",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/aree-amministrative",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/aree-amministrative",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/personale-amministrativo",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/personale-amministrativo",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/avvisi",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/avvisi",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/organi-di-governo",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/organi-di-governo",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/autorizzazioni",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/autorizzazioni",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/uffici",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/uffici",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/agricoltura-e-pesca",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/agricoltura-e-pesca",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/politici",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/politici",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/catasto-e-urbanistica",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/catasto-e-urbanistica",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giovani-biblioteche-e-sport",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giovani-biblioteche-e-sport",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/educazione-e-formazione",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/educazione-e-formazione",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giustizia-e-sicurezza-pubblica",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giustizia-e-sicurezza-pubblica",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/mobilita-e-trasporti",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/mobilita-e-trasporti",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/imprese-e-commercio",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/imprese-e-commercio",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/salute-benessere-e-assistenza",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/salute-benessere-e-assistenza",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/luoghi",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/luoghi",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/turismo",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/turismo",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/eventi",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/eventi",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/tributi-finanze-e-contravvenzioni",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/tributi-finanze-e-contravvenzioni",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_ses.BwyqkGKqkX.c10f",
+            "cookie_value": "1"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it",
+            "cookie_domain": "www.comune.santilariodenza.re.it",
+            "cookie_name": "_pk_id.BwyqkGKqkX.c10f",
+            "cookie_value": "3a23a75716230896.1765790741."
+          }
+        ]
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "id": "municipality-legislation-cookie-domain-check",
+      "error": false,
+      "code": "C.SI.3.1",
+      "title": "C.SI.3.1 - COOKIE - Il sito comunale deve presentare cookie tecnici in linea con la normativa vigente.",
+      "mainTitle": "COOKIE",
+      "auditId": "municipality-legislation-cookie-domain-check",
+      "specificScore": 0
+    },
+    "municipality-legislation-accessibility-declaration-is-present": {
+      "score": 0,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Testo del link",
+          "Pagina di destinazione del link",
+          "Pagina esistente",
+          "La pagina contiene l'url del sito di origine",
+          "È dichiarata la conformità alle specifiche WCAG 2.1"
+        ],
+        "pages": [
+          {
+            "link_name": "",
+            "link": "https://www.comune.santilariodenza.re.it",
+            "existing_page": "No",
+            "page_contains_correct_url": "",
+            "wcag": ""
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "intermediateMessage": true,
+      "id": "municipality-legislation-accessibility-declaration-is-present",
+      "code": "C.SI.3.2",
+      "title": "C.SI.3.2 - DICHIARAZIONE DI ACCESSIBILITÀ - Il sito comunale deve esporre la dichiarazione di accessibilità in conformità al modello e alle linee guida rese disponibili da AgID in ottemperanza alla normativa vigente in materia di accessibilità e con livelli di accessibilità contemplati nelle specifiche tecniche WCAG 2.1.",
+      "mainTitle": "DICHIARAZIONE DI ACCESSIBILITÀ",
+      "auditId": "municipality-legislation-accessibility-declaration-is-present",
+      "specificScore": 0
+    },
+    "municipality-domain": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [
+          "Pagine raggiungibili senza che sia necessario inserire \"www.\" e nelle quali il dominio utilizzato è corretto:",
+          "Dominio utilizzato",
+          "Viene usato il sottodominio \"comune.\" seguito da un dominio istituzionale riservato",
+          "Sito raggiungibile senza \"www.\""
+        ],
+        "pages": [
+          {
+            "link": "https://www.comune.santilariodenza.re.it/prenotazione-appuntamenti-uffici/",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/documenti-e-dati",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/anagrafe-e-stato-civile",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/enti-e-fondazioni",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/ambiente",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/notizie",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/aree-amministrative",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/personale-amministrativo",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/avvisi",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/autorizzazioni",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/organi-di-governo",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/uffici",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/politici",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/agricoltura-e-pesca",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/catasto-e-urbanistica",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giovani-biblioteche-e-sport",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/educazione-e-formazione",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/mobilita-e-trasporti",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giustizia-e-sicurezza-pubblica",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/imprese-e-commercio",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/salute-benessere-e-assistenza",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/luoghi",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/turismo",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/eventi",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/tributi-finanze-e-contravvenzioni",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it",
+            "domain": "comune.santilariodenza.re.it",
+            "correct_domain": "Sì",
+            "www_access": "Sì"
+          }
+        ]
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "id": "municipality-domain",
+      "error": false,
+      "code": "C.SI.5.2",
+      "title": "C.SI.5.2 - DOMINIO ISTITUZIONALE - Il sito comunale utilizza un dominio istituzionale secondo le modalità indicate nella documentazione del modello di sito comunale.",
+      "mainTitle": "DOMINIO ISTITUZIONALE",
+      "auditId": "municipality-domain",
+      "specificScore": 0
+    },
+    "municipality-faq-is-present": {
+      "score": 1,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Testo del link",
+          "Pagina di destinazione",
+          "Pagina esistente"
+        ],
+        "pages": [
+          {
+            "link_name": "leggi le faq",
+            "link": "https://www.comune.santilariodenza.re.it/leggi-le-faq",
+            "existing_page": "Sì"
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "id": "municipality-faq-is-present",
+      "title": "C.SI.2.3 - RICHIESTA DI ASSISTENZA / DOMANDE FREQUENTI - Il sito comunale deve contenere una sezione per le domande più frequenti (FAQ).",
+      "code": "C.SI.2.3",
+      "mainTitle": "RICHIESTA DI ASSISTENZA / DOMANDE FREQUENTI",
+      "auditId": "municipality-faq-is-present",
+      "specificScore": 1
+    },
+    "municipality-controlled-vocabularies": {
+      "score": 0.5,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "% di argomenti presenti nell'elenco del modello",
+          "Argomenti non presenti nell'elenco del modello",
+          "% di argomenti presenti nell'elenco del modello o EuroVoc",
+          "Argomenti non presenti nell'elenco del modello o EuroVoc"
+        ],
+        "pages": [
+          {
+            "element_in_municipality_model_percentage": "76%",
+            "element_not_in_municipality_vocabulary": "casa, certificati e documenti, commercio, cultura, edilizia privata, giovani, polizia locale, trasporto",
+            "element_in_union_percentage": "88%",
+            "element_not_in_union_vocabulary": "certificati e documenti, commercio, edilizia privata, trasporto"
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "id": "municipality-controlled-vocabularies",
+      "title": "C.SI.1.5 - VOCABOLARI CONTROLLATI - Il sito comunale deve utilizzare argomenti forniti dal modello di sito comunale ovvero quelli appartenenti al vocabolario controllato europeo EuroVoc.",
+      "code": "C.SI.1.5",
+      "mainTitle": "VOCABOLARI CONTROLLATI",
+      "auditId": "municipality-controlled-vocabularies",
+      "specificScore": 1
+    },
+    "municipality-performance-improvement-plan": {
+      "score": 1,
+      "id": "municipality-performance-improvement-plan",
+      "title": "Il sito ha un link al piano di miglioramento nel footer",
+      "code": "",
+      "mainTitle": "",
+      "auditId": "municipality-performance-improvement-plan",
+      "failureTitle": "Il sito non ha un link al piano di miglioramento nel footer"
+    },
+    "municipality-inefficiency-report": {
+      "score": 1,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Testo del link",
+          "Pagina di destinazione",
+          "Pagina esistente",
+          "Viene usato il servizio dedicato"
+        ],
+        "pages": [
+          {
+            "link_name": "segnalazione disservizio",
+            "link": "https://www.comune.santilariodenza.re.it/segnalazioni",
+            "existing_page": "Sì",
+            "is_service": "No"
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "id": "municipality-inefficiency-report",
+      "title": "C.SI.2.4 - SEGNALAZIONE DISSERVIZIO - Il sito comunale deve fornire al cittadino la possibilità di segnalare un disservizio, tramite email o servizio dedicato.",
+      "code": "C.SI.2.4",
+      "mainTitle": "SEGNALAZIONE DISSERVIZIO",
+      "auditId": "municipality-inefficiency-report",
+      "specificScore": 1
+    },
+    "municipality-booking-appointment-check": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "tolerancePages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [
+          "Pagine nelle quali è presente il componente:",
+          "Componente individuato",
+          "Nella sezione \"Accedi al servizio\" della scheda servizio è presente il pulsante di prenotazione appuntamento"
+        ],
+        "pages": [
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "component_exist": "Sì",
+            "in_page_url": "Non si applica"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "component_exist": "Sì",
+            "in_page_url": "No"
+          }
+        ]
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "error": false,
+      "code": "C.SI.2.1",
+      "id": "municipality-booking-appointment-check",
+      "title": "C.SI.2.1 - PRENOTAZIONE APPUNTAMENTI - Il sito comunale deve consentire di prenotare un appuntamento presso lo sportello di competenza",
+      "mainTitle": "PRENOTAZIONE APPUNTAMENTI",
+      "auditId": "municipality-booking-appointment-check",
+      "specificScore": 0
+    },
+    "municipality-license-and-attribution": {
+      "score": 1,
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Testo del link",
+          "Pagina di destinazione del link",
+          "Il titolo della sezione è corretto",
+          "La dicitura è corretta"
+        ],
+        "pages": [
+          {
+            "link_name": "Note legali",
+            "link": "https://www.comune.santilariodenza.re.it/note-legali",
+            "page_section": "Sì",
+            "page_contains_correct_text": "Sì"
+          }
+        ]
+      },
+      "errorMessage": "",
+      "id": "municipality-license-and-attribution",
+      "info": false,
+      "title": "C.SI.3.4 - LICENZA E ATTRIBUZIONE - Il sito comunale deve pubblicare dati, documenti e informazioni con licenza aperta comunicandolo come descritto nella documentazione del modello di sito comunale.",
+      "code": "C.SI.3.4",
+      "mainTitle": "LICENZA E ATTRIBUZIONE",
+      "auditId": "municipality-license-and-attribution",
+      "specificScore": 1
+    },
+    "municipality-legislation-privacy-is-present": {
+      "score": 1,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Testo del link",
+          "Pagina di destinazione del link",
+          "Pagina esistente",
+          "Pagina sicura"
+        ],
+        "pages": [
+          {
+            "link_name": "Informativa privacy",
+            "link": "https://www.comune.santilariodenza.re.it/informativa-privacy",
+            "existing_page": "Sì",
+            "secure_page": "Sì"
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "id": "municipality-legislation-privacy-is-present",
+      "title": "C.SI.3.3 - INFORMATIVA PRIVACY - Il sito comunale deve presentare l'informativa sul trattamento dei dati personali, secondo quanto previsto dalla normativa vigente.",
+      "code": "C.SI.3.3",
+      "mainTitle": "INFORMATIVA PRIVACY",
+      "auditId": "municipality-legislation-privacy-is-present",
+      "specificScore": 1
+    },
+    "municipality-security": {
+      "score": 1,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Protocollo usato dal dominio",
+          "Validità del certificato",
+          "Versione TLS",
+          "Suite di cifratura",
+          "La pagina effettua redirect da http a https"
+        ],
+        "pages": [
+          {
+            "protocol": "https",
+            "certificate_validation": "Dal 25/10/2025 al 23/1/2026",
+            "tls_version": "1.3",
+            "cipher_suite": "TLS_AES_256_GCM_SHA384",
+            "redirect_to_https": "Sì"
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "id": "municipality-security",
+      "title": "C.SI.5.1 - CERTIFICATO HTTPS - Il sito comunale deve avere un certificato https valido e attivo.",
+      "code": "C.SI.5.1",
+      "mainTitle": "CERTIFICATO HTTPS",
+      "auditId": "municipality-security",
+      "specificScore": 1
+    },
+    "municipality-ux-ui-consistency-theme-version-check": {
+      "score": 0.5,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Tema CMS del modello in uso",
+          "Versione del tema CMS in uso"
+        ],
+        "pages": [
+          {
+            "cms_name": "Nessuno",
+            "theme_version": "N/A"
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "id": "municipality-ux-ui-consistency-theme-version-check",
+      "title": "C.SI.1.4 - UTILIZZO DI TEMI PER CMS - Nel caso in cui il sito utilizzi un tema messo a disposizione nella documentazione del modello di sito comunale, lo utilizza nella versione 1.0 o successive.",
+      "code": "C.SI.1.4",
+      "mainTitle": "UTILIZZO DI TEMI PER CMS",
+      "auditId": "municipality-ux-ui-consistency-theme-version-check",
+      "specificScore": 1
+    },
+    "municipality-informative-cloud-infrastructure": {
+      "score": null,
+      "id": "municipality-informative-cloud-infrastructure",
+      "title": "R.SI.2.1 - INFRASTRUTTURE CLOUD - Il sito comunale deve essere ospitato su infrastrutture qualificate ai sensi della normativa vigente",
+      "code": "R.SI.2.1",
+      "mainTitle": "INFRASTRUTTURE CLOUD",
+      "auditId": "municipality-informative-cloud-infrastructure"
+    },
+    "municipality-informative-reuse": {
+      "score": null,
+      "id": "municipality-informative-reuse",
+      "title": "R.SI.2.2 - RIUSO - Il Comune deve mettere a riuso sotto licenza aperta il software secondo le Linee Guida “acquisizione e riuso di software e riuso di software per le pubbliche amministrazioni",
+      "code": "R.SI.2.2",
+      "mainTitle": "RIUSO",
+      "auditId": "municipality-informative-reuse"
+    },
+    "municipality-menu-structure-match-model": {
+      "score": 1,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Voce di menù",
+          "Link trovato",
+          "Pagina interna al dominio"
+        ],
+        "pages": [
+          {
+            "menu_voice": "Amministrazione",
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione",
+            "external": "Sì"
+          },
+          {
+            "menu_voice": "Novità",
+            "link": "https://www.comune.santilariodenza.re.it/novita",
+            "external": "Sì"
+          },
+          {
+            "menu_voice": "Servizi",
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "external": "Sì"
+          },
+          {
+            "menu_voice": "Vivere Sant'Ilario d'Enza",
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno",
+            "external": "Sì"
+          }
+        ]
+      },
+      "recapItems": {
+        "message": "",
+        "headings": [
+          "Voci del menù identificate",
+          "Voci del menù mancanti",
+          "Voci del menù in ordine errato"
+        ],
+        "pages": [
+          {
+            "found_menu_voices": "Amministrazione, Novità, Servizi, Vivere Sant'Ilario d'Enza",
+            "missing_menu_voices": "",
+            "wrong_order_menu_voices": ""
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "id": "municipality-menu-structure-match-model",
+      "title": "C.SI.1.6 - VOCI DI MENÙ DI PRIMO LIVELLO - Il sito comunale deve presentare tutte le voci di menù di primo livello, nell'esatto ordine descritto dalla documentazione del modello di sito comunale.",
+      "code": "C.SI.1.6",
+      "mainTitle": "VOCI DI MENÙ DI PRIMO LIVELLO",
+      "auditId": "municipality-menu-structure-match-model",
+      "specificScore": 1
+    },
+    "municipality-feedback-element": {
+      "score": 1,
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "tolerancePages": {
+        "message": "",
+        "headings": [
+          "Pagine nelle quali il componente è presente ma potrebbe non rispettare tutte le caratteristiche richieste:",
+          "Elementi errati o non trovati"
+        ],
+        "pages": [
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/documenti-e-dati",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/anagrafe-e-stato-civile",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/enti-e-fondazioni",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/ambiente",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/aree-amministrative",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/notizie",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/personale-amministrativo",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/autorizzazioni",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/organi-di-governo",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/avvisi",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/uffici",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/agricoltura-e-pesca",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/politici",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/catasto-e-urbanistica",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giovani-biblioteche-e-sport",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/educazione-e-formazione",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/mobilita-e-trasporti",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giustizia-e-sicurezza-pubblica",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/imprese-e-commercio",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/turismo",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/salute-benessere-e-assistenza",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/eventi",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/tributi-finanze-e-contravvenzioni",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/luoghi",
+            "errors_found": "Domanda negativa di follow up non trovata; Domanda positiva di follow up non trovata"
+          }
+        ]
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "id": "municipality-feedback-element",
+      "title": "C.SI.2.5 - VALUTAZIONE DELL'ESPERIENZA D'USO, CHIAREZZA DELLE PAGINE INFORMATIVE - Il sito comunale deve consentire al cittadino di fornire una valutazione della chiarezza di ogni pagina di primo e secondo livello.",
+      "mainTitle": "VALUTAZIONE DELL'ESPERIENZA D'USO, CHIAREZZA DELLE PAGINE INFORMATIVE",
+      "code": "C.SI.2.5",
+      "auditId": "municipality-feedback-element",
+      "specificScore": 1
+    },
+    "municipality-ux-ui-consistency-fonts-check": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "tolerancePages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [
+          "Pagine analizzate nelle quali vengono utilizzati i font come richiesto:",
+          "Numero di <h> o <p> con font errati",
+          "Font errati individuati"
+        ],
+        "pages": [
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/documenti-e-dati",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/enti-e-fondazioni",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/anagrafe-e-stato-civile",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/ambiente",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/aree-amministrative",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/notizie",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/personale-amministrativo",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/autorizzazioni",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/organi-di-governo",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/novita/avvisi",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/uffici",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/agricoltura-e-pesca",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/amministrazione/politici",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/catasto-e-urbanistica",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giovani-biblioteche-e-sport",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/educazione-e-formazione",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/mobilita-e-trasporti",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/giustizia-e-sicurezza-pubblica",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/imprese-e-commercio",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/turismo",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/salute-benessere-e-assistenza",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/eventi",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/servizi/tributi-finanze-e-contravvenzioni",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          },
+          {
+            "link": "https://www.comune.santilariodenza.re.it/vivere-silario-e-calerno/luoghi",
+            "wrong_number_elements": 0,
+            "wrong_fonts": ""
+          }
+        ]
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "id": "municipality-ux-ui-consistency-fonts-check",
+      "error": false,
+      "code": "C.SI.1.1",
+      "title": "C.SI.1.1 - COERENZA DELL'UTILIZZO DEI FONT (librerie di caratteri) - Il sito comunale deve utilizzare i font indicati dalla documentazione del modello di sito comunale.",
+      "mainTitle": "COERENZA DELL'UTILIZZO DEI FONT (librerie di caratteri)",
+      "auditId": "municipality-ux-ui-consistency-fonts-check",
+      "specificScore": 0
+    },
+    "municipality-contacts-assistency": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "error": false,
+      "id": "municipality-contacts-assistency",
+      "title": "C.SI.2.2 - RICHIESTA DI ASSISTENZA / CONTATTI - All'interno del sito comunale, nel contenuto della scheda servizio, devono essere comunicati i contatti dell'ufficio preposto all'erogazione del servizio.",
+      "code": "C.SI.2.2",
+      "mainTitle": "RICHIESTA DI ASSISTENZA / CONTATTI",
+      "auditId": "municipality-contacts-assistency",
+      "specificScore": 0
+    },
+    "municipality-metatag": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "tolerancePages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "info": true,
+      "error": false,
+      "id": "municipality-metatag",
+      "title": "R.SI.1.1 - METATAG - Nel sito comunale, le voci della scheda servizio devono presentare i metatag descritti dal modello, in base agli standard internazionali.",
+      "mainTitle": "METATAG",
+      "auditId": "municipality-metatag",
+      "code": "R.SI.1.1",
+      "specificScore": 0
+    },
+    "municipality-servizi-structure-match-model": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "tolerancePages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "error": false,
+      "code": "C.SI.1.3",
+      "id": "municipality-servizi-structure-match-model",
+      "title": "C.SI.1.3 - SCHEDE INFORMATIVE DI SERVIZIO PER IL CITTADINO - Tutte le schede informative dei servizi per il cittadino devono mostrare le voci segnalate come obbligatorie all'interno dell'architettura dell'informazione, nell'ordine segnalato dal modello.",
+      "mainTitle": "SCHEDE INFORMATIVE DI SERVIZIO PER IL CITTADINO",
+      "auditId": "municipality-servizi-structure-match-model",
+      "specificScore": 0
+    },
+    "municipality-user-experience-evaluation": {
+      "score": 0,
+      "pagesInError": {
+        "message": "In almeno una delle pagine analizzate si sono verificati degli errori.",
+        "headings": [
+          "Pagine nelle quali si sono verificati errori:",
+          "Errori"
+        ],
+        "pages": [
+          {
+            "link": "https://temppagenotavailable/Servizio",
+            "result": "Non è stato possibile trovare l'attributo [data-element=\"service-link\"]",
+            "show": false
+          }
+        ]
+      },
+      "wrongPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "tolerancePages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "correctPages": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "Si sono verificati degli errori. Controlla la tabella sottostante per maggiori dettagli.",
+      "error": false,
+      "id": "municipality-user-experience-evaluation",
+      "title": "C.SI.2.6 - VALUTAZIONE DELL’ESPERIENZA D’USO, CHIAREZZA INFORMATIVA DELLA SCHEDA DI SERVIZIO - Il sito comunale deve permettere la valutazione della chiarezza informativa per ogni scheda di servizio secondo le modalità indicate nella documentazione del modello di sito comunale.",
+      "code": "C.SI.2.6",
+      "mainTitle": "VALUTAZIONE DELL’ESPERIENZA D’USO, CHIAREZZA INFORMATIVA DELLA SCHEDA DI SERVIZIO",
+      "auditId": "municipality-user-experience-evaluation",
+      "specificScore": 0
+    },
+    "common-security-ip-location": {
+      "score": 1,
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "Città indirizzo IP",
+          "Paese indirizzo IP"
+        ],
+        "pages": [
+          {
+            "ip_city": "Ponte San Pietro",
+            "ip_country": "IT"
+          }
+        ]
+      },
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "errorMessage": "",
+      "info": true,
+      "id": "common-security-ip-location",
+      "title": "LOCALIZZAZIONE IP - Il sito deve essere ospitato su datacenter localizzati su territorio europeo.",
+      "code": "Localizzazione IP",
+      "mainTitle": "Localizzazione IP",
+      "auditId": "common-security-ip-location",
+      "specificScore": 1
+    },
+    "municipality-second-level-pages": {
+      "score": 1,
+      "pagesInError": {
+        "message": "",
+        "headings": [],
+        "pages": []
+      },
+      "pagesItems": {
+        "message": "",
+        "headings": [
+          "% di titoli corretti tra quelli usati",
+          "Titoli corretti identificati",
+          "Titoli aggiuntivi trovat"
+        ],
+        "pages": [
+          {
+            "correct_title_percentage": "100%",
+            "correct_title_found": "AMMINISTRAZIONE: Organi di governo, Aree amministrative, Uffici, Enti e fondazioni, Politici, Personale Amministrativo, Documenti e dati; NOVITÀ: Notizie, Avvisi; SERVIZI: Agricoltura e pesca, Ambiente, Anagrafe e stato civile, Autorizzazioni, Catasto e urbanistica, Cultura e tempo libero, Educazione e formazione, Giustizia e sicurezza pubblica, Imprese e commercio, Mobilità e trasporti, Salute, benessere e assistenza, Tributi, finanze e contravvenzioni, Turismo; VIVERE IL COMUNE: luoghi, eventi; ",
+            "wrong_title_found": ""
+          }
+        ]
+      },
+      "errorMessage": "",
+      "id": "municipality-second-level-pages",
+      "title": "C.SI.1.7 - TITOLI DELLE PAGINE DI SECONDO LIVELLO - Nel sito comunale, i titoli delle pagine di secondo livello devono rispettare il vocabolario descritto dalla documentazione del modello di sito comunale.",
+      "code": "C.SI.1.7",
+      "mainTitle": "TITOLI DELLE PAGINE DI SECONDO LIVELLO ",
+      "auditId": "municipality-second-level-pages",
+      "specificScore": 1
+    }
+  },
+  "requestedUrl": "https://www.comune.santilariodenza.re.it",
+  "finalUrl": "https://www.comune.santilariodenza.re.it",
+  "fetchTime": "2025-12-15T09:27:27.000Z"
+}
