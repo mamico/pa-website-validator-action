@@ -14,6 +14,8 @@ on:
         required: true
         type: choice
         options:
+          - www.comune.argelato.bo.it
+          - www.comune.castel-maggiore.bo.it        
           - www.unionedelsorbara.mo.it
           - comune.lignano-sabbiadoro.ud.it
           - v3.io-comune.redturtle.it
