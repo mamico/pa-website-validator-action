@@ -87,7 +87,7 @@ def parse_files():
                         'date': audit['fetchTime'],
                         'url': f"./{file.replace('.json', '.html')}"
                     },
-                    'site': audit.get('finalUrl'),
+                    'site': audit.get('finalUrl').strip("/"),
                     'performance': int((audit["audits"]["lighthouse"]["score"] or 0) * 100),
                     'modelComplianceInformation': modelComplianceInformation,
                     'reccomandationsAndAdditionalTests': reccomandationsAndAdditionalTests,
